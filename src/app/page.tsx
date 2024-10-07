@@ -9,12 +9,13 @@ import Hero from "./components/Hero";
 import Review from "./components/Review";
 import Skill from "./components/Skill";
 import Work from "./components/Work";
+import Education from "./components/Education";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
   useGSAP(() => {
-    const elements: any[] = gsap.utils.toArray(".reveal-up");
+    const elements: HTMLElement[] = gsap.utils.toArray(".reveal-up");
     elements.forEach((element) => {
       gsap.to(element, {
         scrollTrigger: {
@@ -39,6 +40,7 @@ export default function Home() {
           <Skill />
           <Work />
           <Review />
+          <Education />
           <Contact />
         </main>
       </ReactLenis>
