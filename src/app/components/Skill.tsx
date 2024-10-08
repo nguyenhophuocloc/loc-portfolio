@@ -2,19 +2,24 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
+    imgSrc: "/images/skill/html.svg",
+    label: "HTML",
+    desc: "Language",
   },
   {
-    imgSrc: "/images/css3.svg",
+    imgSrc: "/images/skill/css.svg",
     label: "CSS",
-    desc: "User Interface",
+    desc: "Language",
   },
   {
     imgSrc: "/images/javascript.svg",
     label: "JavaScript",
-    desc: "Interaction",
+    desc: "Language",
+  },
+  {
+    imgSrc: "/images/skill/ant-design.svg",
+    label: "JavaScript",
+    desc: "Language",
   },
   {
     imgSrc: "/images/nodejs.svg",
@@ -41,6 +46,11 @@ const skillItem = [
     label: "TailwindCSS",
     desc: "User Interface",
   },
+  {
+    imgSrc: "/images/figma.svg",
+    label: "Figma",
+    desc: "Design tool",
+  },
 ];
 
 const Skill = () => {
@@ -56,8 +66,13 @@ const Skill = () => {
 
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
           {skillItem.map(({ imgSrc, label, desc }, key) => (
-            <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc}
-            classes="reveal-up" />
+            <SkillCard
+              key={key}
+              imgSrc={imgSrc}
+              label={label}
+              desc={desc}
+              classes="reveal-up"
+            />
           ))}
         </div>
       </div>

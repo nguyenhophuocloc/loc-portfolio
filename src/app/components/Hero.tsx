@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Avatar from "@public/images/avatar-1.jpg";
-import HeroBanner from "@public/images/hero-banner.jpg";
+import HeroBanner from "@public/images/hero-banner.png";
 import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const Hero = () => {
@@ -32,14 +32,15 @@ const Hero = () => {
               Available for work
             </div>
           </div>
-
           <h2
             className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5
-          mb-8 lg:mb-10"
+          mb-4 lg:mb-4"
           >
-            Building Scalable Modern Websites for the Future
+            Hi, I&apos;m Loc
+            <br />
           </h2>
-
+          <h3 className="headline-2 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-2
+          mb-8 lg:mb-10">Web Developer</h3>
           <div className="flex items-center gap-3">
             <ButtonPrimary label="Download CV" icon="download" />{" "}
             <ButtonOutline
@@ -52,15 +53,15 @@ const Hero = () => {
 
         <div className="hidden lg:block">
           <figure
-            className="w-full max-w-[480px] ml-auto bg-gradient-to-t
-          from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden"
+            className="h-[300px] w-[300px] mx-auto bg-gradient-to-t
+          from-sky-400 via-25% via-sky-400/40 to-65% rounded-full overflow-hidden"
           >
             <Image
               src={HeroBanner}
               alt="Nguyen Ho Phuoc Loc"
-              className="w-full"
-              width={635}
-              height={800}
+              className="w-full scale-[0.9]"
+              width={300}
+              height={300}
             />
           </figure>
         </div>

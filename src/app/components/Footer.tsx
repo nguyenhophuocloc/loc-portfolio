@@ -106,7 +106,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-between pt-10 mb-8">
           <Link href="/" className="logo reveal-up">
-            <Image src={"/images/logo.svg"} width={40} height={40} alt="logo" />
+            <Image src={"/images/colorcode.png"} width={40} height={40} alt="logo" />
           </Link>
 
           <p className="text-zinc-500 text-sm reveal-up">

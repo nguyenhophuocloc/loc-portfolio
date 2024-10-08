@@ -1,20 +1,22 @@
 "use client";
-import { ReactLenis } from "lenis/react";
+import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { ReactLenis } from "lenis/react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
-import Review from "./components/Review";
 import Skill from "./components/Skill";
 import Work from "./components/Work";
+import Certificate from "./components/Certificate";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
   useGSAP(() => {
-    const elements: any[] = gsap.utils.toArray(".reveal-up");
+    const elements: HTMLElement[] = gsap.utils.toArray(".reveal-up");
     elements.forEach((element) => {
       gsap.to(element, {
         scrollTrigger: {
@@ -36,9 +38,11 @@ export default function Home() {
         <main>
           <Hero />
           <About />
+          <Experience />
+          <Education />
           <Skill />
           <Work />
-          <Review />
+          <Certificate />
           <Contact />
         </main>
       </ReactLenis>
