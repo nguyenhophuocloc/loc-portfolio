@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "@public/images/logo.svg";
+import Logo from "@public/images/colorcode.png";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -16,6 +16,7 @@ const Header = () => {
               src={Logo}
               alt="Nguyen Ho Phuoc Loc"
               width={40}
+              className=""
               height={40}
             />
           </Link>

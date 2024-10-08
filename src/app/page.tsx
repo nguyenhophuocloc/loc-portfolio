@@ -1,15 +1,16 @@
 "use client";
-import { ReactLenis } from "lenis/react";
+import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { ReactLenis } from "lenis/react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
-import Review from "./components/Review";
 import Skill from "./components/Skill";
 import Work from "./components/Work";
-import Education from "./components/Education";
+import Certificate from "./components/Certificate";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -37,10 +38,11 @@ export default function Home() {
         <main>
           <Hero />
           <About />
+          <Experience />
+          <Education />
           <Skill />
           <Work />
-          <Review />
-          <Education />
+          <Certificate />
           <Contact />
         </main>
       </ReactLenis>
