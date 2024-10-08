@@ -2,9 +2,9 @@ import ExperienceCard from "./ExperienceCard";
 
 const workExperience = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     name: "namperfume",
-    logo: "/images/exp_2.jpg",
+    logo: "/images/exp/exp_2.jpg",
     from: "Dec 2022",
     to: "Jun 2024",
     type: "Full-time",
@@ -19,7 +19,7 @@ const workExperience = [
   {
     title: "Intern Java Developer",
     name: "FPT Software",
-    logo: "/images/exp_1.png",
+    logo: "/images/exp/exp_1.png",
     from: "Jun 2021",
     to: "Aug 2021",
     type: "Full-time",

@@ -53,13 +53,18 @@ const Navbar = ({ navOpen }: Props) => {
       className: "nav-link",
     },
     {
-      label: "Work",
-      link: "#work",
+      label: "Experience",
+      link: "#experience",
       className: "nav-link",
     },
     {
-      label: "Reviews",
-      link: "#reviews",
+      label: "Education",
+      link: "#education",
+      className: "nav-link",
+    },
+    {
+      label: "Project",
+      link: "#project",
       className: "nav-link",
     },
     {

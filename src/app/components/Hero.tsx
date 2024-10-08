@@ -32,14 +32,15 @@ const Hero = () => {
               Available for work
             </div>
           </div>
-
           <h2
             className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5
-          mb-8 lg:mb-10"
+          mb-4 lg:mb-4"
           >
-            Building Scalable Modern Websites for the Future
+            Hi, I&apos;m Loc
+            <br />
           </h2>
-
+          <h3 className="headline-2 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-2
+          mb-8 lg:mb-10">Web Developer</h3>
           <div className="flex items-center gap-3">
             <ButtonPrimary label="Download CV" icon="download" />{" "}
             <ButtonOutline

@@ -5,25 +5,25 @@ const certificates = [
     title: "Back End Development and APIs",
     name: "freeCodeCamp",
     date: "Apr 2024",
-    logo: "/images/certificate_1.jpg",
+    logo: "/images/certificate/certificate_1.jpg",
   },
   {
     title: "Back End Development and APIs",
     name: "freeCodeCamp",
     date: "Apr 2024",
-    logo: "/images/certificate_2.jpg",
+    logo: "/images/certificate/certificate_2.jpg",
   },
   {
     title: "Back End Development and APIs",
     name: "freeCodeCamp",
     date: "Apr 2024",
-    logo: "/images/exp_1.png",
+    logo: "/images/certificate/certificate_1.jpg",
   },
   {
     title: "Back End Development and APIs",
     name: "freeCodeCamp",
     date: "Apr 2024",
-    logo: "/images/exp_1.png",
+    logo: "/images/certificate/certificate_1.jpg",
   },
 ];
 const Certificate = () => {
