@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import SkillCard from "./SkillCard";
-import SkillFilter from "./SkillFilter";
+import FilterBtn from "./FilterBtn";
 
 const listGroup = [
   { name: "All", value: 0 },
@@ -261,7 +261,7 @@ const Skill = () => {
 
         <div className="flex flex-wrap items-center gap-3 mb-8">
           {listGroup.map(({ name, value }, key) => (
-            <SkillFilter
+            <FilterBtn
               value={value}
               key={key}
               isActive={value === selectedGroup}

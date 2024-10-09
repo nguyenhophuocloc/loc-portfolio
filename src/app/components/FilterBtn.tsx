@@ -2,9 +2,9 @@ type Props = {
   name: string;
   isActive: boolean;
   value: number;
-  handleSelected: (number) => void;
+  handleSelected: (value: number) => void;
 };
-const SkillFilter = ({ name, value, isActive, handleSelected }: Props) => {
+const FilterBtn = ({ name, value, isActive, handleSelected }: Props) => {
   return (
     <span
       className={
@@ -18,4 +18,4 @@ const SkillFilter = ({ name, value, isActive, handleSelected }: Props) => {
   );
 };
 
-export default SkillFilter;
+export default FilterBtn;
