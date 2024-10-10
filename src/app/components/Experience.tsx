@@ -2,6 +2,21 @@ import ExperienceCard from "./ExperienceCard";
 
 const workExperience = [
   {
+    title: "Fullstack Developer",
+    name: "TechVSI",
+    logo: "/images/exp/exp_3.png",
+    from: "Jul 2024",
+    to: "Present",
+    type: "Full-time",
+    address: "Ho Chi Minh City, Viet Nam",
+    description: `
+      <li><strong>Developed</strong> the company's <strong>ERP system</strong> and <strong>official e-commerce website</strong>.</li>
+      <li><strong>Collaborated</strong> with <strong>cross-functional teams</strong> to <strong>improve project timelines</strong>.</li>
+      <li><strong>Wrote reusable code</strong> that <strong>shortened future development cycles</strong>.</li>
+      <li><strong>Reviewed code</strong> and <strong>developed efficient solutions</strong> to <strong>enhance performance</strong> and <strong>reduce load times</strong>.</li>
+    `,
+  },
+  {
     title: "Frontend Developer",
     name: "namperfume",
     logo: "/images/exp/exp_2.jpg",

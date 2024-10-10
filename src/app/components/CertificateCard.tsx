@@ -11,7 +11,7 @@ const CertificateCard = ({ title, name, logo, date, classes }: Props) => {
   return (
     <div
       className={
-        "ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 transition-colors group " +
+        "ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 transition-colors hover:cursor-pointer group " +
         classes
       }
     >
@@ -25,13 +25,14 @@ const CertificateCard = ({ title, name, logo, date, classes }: Props) => {
             className="img-cover"
           />
         </figure>
-        <h3 className="font-semibold tracking-wide mb-2">{title}</h3>
+        <div>
+          <h3 className="font-semibold tracking-wide">{title}</h3>
+          <p className="text-zinc-400 text-sm">{name}</p>
+          <p className="text-zinc-400 text-sm">Issued {date}</p>
+        </div>
       </div>
-      <div className="ml-[60px]">
-        <p className="text-zinc-400 text-sm">{name}</p>
-        <p className="text-zinc-400 text-sm">Issued {date}</p>
-        <span className="mt-2 flex gap-2 h-8 w-fit text-sm text-zinc-400 bg-zinc-50/5 items-center px-3 rounded-lg hover:cursor-pointer">
-          <span>Show Credential</span>
+      <div className="flex justify-end">
+        <span className="mt-2 flex gap-2 h-8 w-fit text-sm text-zinc-400 bg-zinc-50/5 items-center px-3 rounded-lg hover:cursor-pointer group-hover:text-white">
           <span className="material-symbols-rounded">open_in_new</span>
         </span>
       </div>
