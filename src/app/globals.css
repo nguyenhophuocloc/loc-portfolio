@@ -65,6 +65,11 @@ body {
   transition-[transform,background-color] active:scale-95;
 }
 
+/*Filter*/
+.active-filter{
+  @apply text-zinc-800 bg-zinc-50;
+}
+
 /*Navbar*/
 
 .navbar {

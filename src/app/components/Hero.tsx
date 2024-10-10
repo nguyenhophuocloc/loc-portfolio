@@ -53,13 +53,13 @@ const Hero = () => {
 
         <div className="hidden lg:block">
           <figure
-            className="h-[300px] w-[300px] mx-auto bg-gradient-to-t
+            className="h-[250px] w-[250px] mx-auto bg-gradient-to-t
           from-sky-400 via-25% via-sky-400/40 to-65% rounded-full overflow-hidden"
           >
             <Image
               src={HeroBanner}
               alt="Nguyen Ho Phuoc Loc"
-              className="w-full scale-[0.9]"
+              className="w-full scale-[0.7]"
               width={300}
               height={300}
             />

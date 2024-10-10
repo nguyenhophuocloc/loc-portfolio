@@ -20,8 +20,8 @@ const CertificateCard = ({ title, name, logo, date, classes }: Props) => {
           <Image
             src={logo}
             alt={name}
-            width={48}
-            height={48}
+            width={52}
+            height={52}
             className="img-cover"
           />
         </figure>
