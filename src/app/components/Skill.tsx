@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
-import SkillCard from "./SkillCard";
+import { useEffect, useState } from "react";
 import FilterBtn from "./FilterBtn";
+import SkillCard from "./SkillCard";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const listGroup = [
   { name: "All", value: 0 },
@@ -239,7 +240,6 @@ const Skill = () => {
   const [skills, setSkills] = useState(skillItem);
 
   const handleSelected = (value: number) => {
-    console.log("🚀 ~ handleSelected ~ value:", value);
     setSelectedGroup(value);
     if (value === 0) {
       setSkills(skillItem);
@@ -248,6 +248,10 @@ const Skill = () => {
       setSkills(newSkills);
     }
   };
+
+  useEffect(() => {
+    ScrollTrigger.refresh();
+  }, [skills]);
 
   return (
     <section className="section">

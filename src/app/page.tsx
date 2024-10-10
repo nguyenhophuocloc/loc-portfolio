@@ -33,19 +33,17 @@ export default function Home() {
     });
   });
   return (
-    <>
-      <ReactLenis root>
-        <main>
-          <Hero />
-          <About />
-          <Experience />
-          <Education />
-          <Skill />
-          <Work />
-          <Certificate />
-          <Contact />
-        </main>
-      </ReactLenis>
-    </>
+    <ReactLenis root>
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Skill />
+        <Work />
+        <Certificate />
+        <Contact />
+      </main>
+    </ReactLenis>
   );
 }
