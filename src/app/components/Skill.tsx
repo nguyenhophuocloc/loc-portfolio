@@ -185,18 +185,18 @@ const skillItem = [
     desc: "VCS platform",
     type: 7,
   },
-  {
-    imgSrc: "/images/skill/svn.svg",
-    label: "SVN",
-    desc: "VCS",
-    type: 7,
-  },
-  {
-    imgSrc: "/images/skill/tortoisesvn.svg",
-    label: "Tortoise SVN",
-    desc: "SVN tool",
-    type: 7,
-  },
+  // {
+  //   imgSrc: "/images/skill/svn.svg",
+  //   label: "SVN",
+  //   desc: "VCS",
+  //   type: 7,
+  // },
+  // {
+  //   imgSrc: "/images/skill/tortoisesvn.svg",
+  //   label: "Tortoise SVN",
+  //   desc: "SVN tool",
+  //   type: 7,
+  // },
   {
     imgSrc: "/images/skill/amazon-workspace.svg",
     label: "Amazon Workspace",

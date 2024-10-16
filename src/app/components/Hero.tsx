@@ -53,7 +53,7 @@ const Hero = () => {
 
         <div className="hidden lg:block">
           <figure
-            className="h-[250px] w-[250px] mx-auto bg-gradient-to-t
+            className="h-[250px] w-[250px] ml-auto bg-gradient-to-t
           from-sky-400 via-25% via-sky-400/40 to-65% rounded-full overflow-hidden"
           >
             <Image

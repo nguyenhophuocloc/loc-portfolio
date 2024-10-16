@@ -2,15 +2,14 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ReactLenis } from "lenis/react";
 import About from "./components/About";
+import Certificate from "./components/Certificate";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Skill from "./components/Skill";
 import Work from "./components/Work";
-import Certificate from "./components/Certificate";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -33,17 +32,15 @@ export default function Home() {
     });
   });
   return (
-    <ReactLenis root>
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Education />
-        <Skill />
-        <Work />
-        <Certificate />
-        <Contact />
-      </main>
-    </ReactLenis>
+    <main>
+      <Hero />
+      <About />
+      <Experience />
+      <Education />
+      <Skill />
+      <Work />
+      <Certificate />
+      <Contact />
+    </main>
   );
 }
