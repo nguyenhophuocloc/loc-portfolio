@@ -1,7 +1,8 @@
-import Image from "next/image";
 import Avatar from "@public/images/avatar-1.jpg";
-import HeroBanner from "@public/images/hero-banner.png";
-import { ButtonPrimary, ButtonOutline } from "./Button";
+import HeroBanner from "@public/images/hero-banner-2.png";
+import Image from "next/image";
+import Link from "next/link";
+import { ButtonOutline } from "./Button";
 
 const Hero = () => {
   return (
@@ -39,10 +40,23 @@ const Hero = () => {
             Hi, I&apos;m Loc
             <br />
           </h2>
-          <h3 className="headline-2 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-2
-          mb-8 lg:mb-10">Web Developer</h3>
+          <h3
+            className="headline-2 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-2
+          mb-8 lg:mb-10"
+          >
+            Web Developer
+          </h3>
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="Download CV" icon="download" />{" "}
+            <Link
+              className="btn btn-primary"
+              href={"/files/NguyenHoPhuocLoc_WebDeveloper.pdf"}
+              download={true}
+            >
+              Download CV
+              <span className="material-symbols-rounded" aria-hidden="true">
+                download
+              </span>
+            </Link>
             <ButtonOutline
               label="Scroll down"
               icon="arrow_downward"
@@ -53,15 +67,15 @@ const Hero = () => {
 
         <div className="hidden lg:block">
           <figure
-            className="h-[250px] w-[250px] ml-auto bg-gradient-to-t
-          from-sky-400 via-25% via-sky-400/40 to-65% rounded-full overflow-hidden"
+            className="max-h-[320px] max-w-[320px] ml-auto bg-gradient-to-t
+          from-sky-400 via-25% via-sky-400/40 to-65% rounded-full overflow-hidden flex items-center justify-center"
           >
             <Image
               src={HeroBanner}
               alt="Nguyen Ho Phuoc Loc"
-              className="w-full scale-[0.7]"
-              width={300}
-              height={300}
+              className="w-full"
+              width={480}
+              height={600}
             />
           </figure>
         </div>

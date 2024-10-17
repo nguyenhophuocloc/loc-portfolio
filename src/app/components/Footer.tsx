@@ -12,40 +12,40 @@ const sitemap = [
     href: "#about",
   },
   {
-    label: "Work",
-    href: "#work",
+    label: "Experience",
+    href: "#experience",
   },
   {
-    label: "Reviews",
-    href: "#reviews",
+    label: "Education",
+    href: "#education",
   },
   {
-    label: "Contact me",
-    href: "#contact",
+    label: "Project",
+    href: "#project",
   },
 ];
 
 const socials = [
   {
     label: "GitHub",
-    href: "https://www.github.com/codewithsadee-org",
+    href: "https://www.github.com/nguyenhophuocloc",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/codewithsadee",
+    href: "https://www.linkedin.com/in/nguyen-ho-phuoc-loc",
   },
-  {
-    label: "Twitter X",
-    href: "https://x.com/codewithsadee_",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/codewithsadee",
-  },
-  {
-    label: "CodePen",
-    href: "https://codepen.io/codewithsadee",
-  },
+  // {
+  //   label: "0932 075 864",
+  //   href: "tel:0932075864",
+  // },
+  // // {
+  //   label: "nguyenhophuocloc.cb@gmail.com",
+  //   href: "mailto:nguyenhophuocloc.cb@gmail.com",
+  // },
+  // {
+  //   label: "CodePen",
+  //   href: "https://codepen.io/codewithsadee",
+  // },
 ];
 const Footer = () => {
   return (
@@ -84,7 +84,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="mb-2 reveal-up">Socials</p>
+              <p className="mb-2 reveal-up">Contact</p>
 
               <ul>
                 {socials.map(({ label, href }, key) => (
@@ -106,7 +106,12 @@ const Footer = () => {
 
         <div className="flex items-center justify-between pt-10 mb-8">
           <Link href="/" className="logo reveal-up">
-            <Image src={"/images/colorcode.png"} width={40} height={40} alt="logo" />
+            <Image
+              src={"/images/colorcode.png"}
+              width={40}
+              height={40}
+              alt="logo"
+            />
           </Link>
 
           <p className="text-zinc-500 text-sm reveal-up">

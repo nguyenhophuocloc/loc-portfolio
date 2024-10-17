@@ -1,16 +1,7 @@
 import Image from "next/image";
 import Logo from "@public/images/colorcode.png";
+import { aboutItems } from "@/types/mockData";
 
-const aboutItems = [
-  // {
-  //   label: "Project done",
-  //   number: 45,
-  // },
-  {
-    label: "Years of experience",
-    number: 2,
-  },
-];
 const About = () => {
   return (
     <section id="about" className="section">
