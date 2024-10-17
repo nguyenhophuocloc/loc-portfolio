@@ -1,15 +1,6 @@
+import { educations } from "@/types/mockData";
 import EducationCard from "./EducationCard";
 
-const educations = [
-  {
-    logo: "/images/education_1.png",
-    title: "Bachelor of Engineering in Computer Science",
-    name: "Ho Chi Minh University of Technology - HCMUT",
-    from: 2018,
-    to: 2022,
-    degree: "Good",
-  },
-];
 const Education = () => {
   return (
     <section className="section" id="education">
