@@ -1,5 +1,5 @@
 import Avatar from "@public/images/avatar-1.jpg";
-import HeroBanner from "@public/images/hero-banner-2.png";
+import HeroBanner from "@public/images/hero-banner.png";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonOutline } from "./Button";

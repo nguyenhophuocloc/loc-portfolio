@@ -37,14 +37,16 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
                   {model.from} - {model.to}
                 </span>
               </p>
-              <Link
-                className="flex gap-1 items-center mt-1 underline"
-                href={model.link}
-                target="_blank"
-              >
-                Link
-                <span className="material-symbols-rounded">open_in_new</span>
-              </Link>
+              {model.link && (
+                <Link
+                  className="flex gap-1 items-center mt-1 underline"
+                  href={model.link}
+                  target="_blank"
+                >
+                  Link
+                  <span className="material-symbols-rounded">open_in_new</span>
+                </Link>
+              )}
             </div>
           </div>
 
@@ -69,14 +71,18 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
           </div>
 
           <div className="mt-4 flex gap-2">
-            <p className="italic font-semibold mb-2">Link:</p>
-            <Link
-              href={model.link}
-              target="_blank"
-              className="underline italic"
-            >
-              Click here
-            </Link>
+            {model.link && (
+              <>
+                <p className="italic font-semibold mb-2">Link:</p>
+                <Link
+                  href={model.link}
+                  target="_blank"
+                  className="underline italic"
+                >
+                  Click here
+                </Link>
+              </>
+            )}
           </div>
 
           <div className="mt-4 border-t border-dashed">

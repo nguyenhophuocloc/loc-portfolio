@@ -15,7 +15,6 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
-    "lenis": "^1.1.13",
     "lucide-react": "^0.452.0",
     "material-symbols": "^0.24.0",
     "next": "14.2.14",
