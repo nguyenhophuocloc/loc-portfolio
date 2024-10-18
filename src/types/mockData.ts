@@ -17,7 +17,10 @@ export const works: ProjectJson[] = [
     to: "09/2024",
     link: "https://techcombank.com/khach-hang-ca-nhan/uu-dai",
     detail: {
-      images: [{ title: "Offer page", img: "/images/project/tcb/img1.png" }],
+      images: [
+        { title: "Offer page", img: "/images/project/tcb/img1.png" },
+        { title: "Detail page", img: "/images/project/tcb/img2.png" },
+      ],
       description:
         "Developed a new feature for customers to view offer listings and offer details of promotions.",
       techstacks: "AEM, Java, HTML, SCSS, Javascript, JQuery, Jest, Ajax.",
