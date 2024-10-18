@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,6 +21,18 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Nguyen Ho Phuoc Loc",
+  jobTitle: "Web Developer",
+  url: "https://nguyenhophuocloc.vercel.app/",
+  sameAs: [
+    "https://www.linkedin.com/in/nguyen-ho-phuoc-loc/",
+    "https://github.com/nguyenhophuocloc",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +47,12 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Script
+          id="json-ld-script"
+          type="application/ld+json"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
       </body>
     </html>
   );
