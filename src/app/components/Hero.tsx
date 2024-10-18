@@ -1,7 +1,6 @@
 import Avatar from "@public/images/avatar-1.jpg";
-import HeroBanner from "@public/images/hero-banner.png";
+import HeroBanner from "@public/images/hero-banner2.png";
 import Image from "next/image";
-// import Link from "next/link";
 import { ButtonOutline } from "./Button";
 
 const Hero = () => {
@@ -67,13 +66,13 @@ const Hero = () => {
 
         <div className="hidden lg:block">
           <figure
-            className="max-h-[320px] max-w-[320px] ml-auto bg-gradient-to-t
-          from-sky-400 via-25% via-sky-400/40 to-65% rounded-full overflow-hidden flex items-center justify-center"
+            className="max-h-[300px] max-w-[300px] ml-auto bg-gradient-to-t
+          from-sky-400 via-25% via-sky-400/40 to-65% rounded-full overflow-hidden"
           >
             <Image
               src={HeroBanner}
               alt="Nguyen Ho Phuoc Loc"
-              className="w-full"
+              className="w-full scale-[0.8]"
               width={480}
               height={600}
             />

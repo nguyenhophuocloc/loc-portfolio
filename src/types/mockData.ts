@@ -12,7 +12,7 @@ export const works: ProjectJson[] = [
   {
     imgSrc: "/images/project/tcb/img1.png",
     title: "Techcombank Promotion Hub",
-    tags: ["Website", "AEM", "Freelancer"],
+    tags: ["Website", "AEM", "Development"],
     from: "08/2024",
     to: "09/2024",
     link: "https://techcombank.com/khach-hang-ca-nhan/uu-dai",

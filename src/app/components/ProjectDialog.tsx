@@ -55,7 +55,7 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
             <p>{model.detail.description}</p>
           </div>
 
-          <div className="mt-4 flex lg:gap-2 flex-col lg:flex-row">
+          <div className="mt-2 flex lg:gap-2 flex-col lg:flex-row">
             <p className="italic font-semibold mb-2">Tech stacks:</p>
             <p>{model.detail.techstacks}</p>
           </div>
