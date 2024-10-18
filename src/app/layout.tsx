@@ -12,6 +12,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Nguyen Ho Phuoc Loc",
   description: "Nguyen Ho Phuoc Loc Portfolio",
+  openGraph: {
+    title: "Nguyen Ho Phuoc Loc",
+    description: "Nguyen Ho Phuoc Loc Portfolio",
+    type: "website",
+    images: ["/images/meta.jpg"],
+  },
 };
 
 export default function RootLayout({

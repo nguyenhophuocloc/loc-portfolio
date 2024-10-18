@@ -10,6 +10,32 @@ import {
 
 export const works: ProjectJson[] = [
   {
+    imgSrc: "/images/project/tcb/img1.png",
+    title: "Techcombank Promotion Hub",
+    tags: ["Website", "AEM", "Freelancer"],
+    from: "08/2024",
+    to: "09/2024",
+    link: "https://techcombank.com/khach-hang-ca-nhan/uu-dai",
+    detail: {
+      images: [
+        { title: "Offer page", img: "/images/project/tcb/img1.png" },
+      ],
+      description:
+        "Developed a new feature for customers to view offer listings and offer details of promotions.",
+      techstacks:
+        "AEM, Java, HTML, SCSS, Javascript, JQuery, Jest, Ajax.",
+      responsibilities: ` <li>
+                Develop the component and UI/UX from design.
+              </li>
+              <li>
+                Integrate new API for new function.
+              </li>
+              <li>
+                Write unit test and document for the the website.
+              </li>`,
+    },
+  },
+  {
     imgSrc: "/images/project/npf/img1.png",
     title: "Namperfume Official Website",
     tags: ["Ecommerce", "Nextjs", "Development"],
@@ -57,9 +83,13 @@ export const works: ProjectJson[] = [
     detail: {
       images: [
         { title: "Home page", img: "/images/project/nteam/img1.jpg" },
-        { title: "Detail page", img: "/images/project/nteam/img1.jpg" },
-        { title: "Collection page", img: "/images/project/npf/img2.png" },
-        { title: "Cart page", img: "/images/project/npf/img4.png" },
+        { title: "Check-in form", img: "/images/project/nteam/img2.jpg" },
+        { title: "Employee list", img: "/images/project/nteam/img3.jpg" },
+        { title: "Kanban page", img: "/images/project/nteam/img4.jpg" },
+        { title: "Task form", img: "/images/project/nteam/img5.jpg" },
+        { title: "Profile page", img: "/images/project/nteam/img6.jpg" },
+        { title: "Order page", img: "/images/project/nteam/img7.jpg" },
+        { title: "Order form", img: "/images/project/nteam/img8.jpg" },
       ],
       description:
         "Developed a full-featured e-commerce website with core functionalities like search, filters, product ordering, mail notifications, online payments, product reviews, and ratings.",
