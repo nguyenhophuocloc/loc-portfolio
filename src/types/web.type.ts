@@ -13,7 +13,7 @@ type ProjectJson = {
   tags: string[];
   from: string;
   to: string;
-  link: string;
+  link?: string;
   detail: ProjectDetailJson;
 };
 

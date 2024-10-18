@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import 'lenis/dist/lenis.css'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,6 +12,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Nguyen Ho Phuoc Loc",
   description: "Nguyen Ho Phuoc Loc Portfolio",
+  openGraph: {
+    title: "Nguyen Ho Phuoc Loc",
+    description: "Nguyen Ho Phuoc Loc Portfolio",
+    type: "website",
+    images: ["/images/meta.jpg"],
+  },
 };
 
 export default function RootLayout({
