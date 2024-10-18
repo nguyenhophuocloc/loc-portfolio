@@ -17,13 +17,10 @@ export const works: ProjectJson[] = [
     to: "09/2024",
     link: "https://techcombank.com/khach-hang-ca-nhan/uu-dai",
     detail: {
-      images: [
-        { title: "Offer page", img: "/images/project/tcb/img1.png" },
-      ],
+      images: [{ title: "Offer page", img: "/images/project/tcb/img1.png" }],
       description:
         "Developed a new feature for customers to view offer listings and offer details of promotions.",
-      techstacks:
-        "AEM, Java, HTML, SCSS, Javascript, JQuery, Jest, Ajax.",
+      techstacks: "AEM, Java, HTML, SCSS, Javascript, JQuery, Jest, Ajax.",
       responsibilities: ` <li>
                 Develop the component and UI/UX from design.
               </li>
@@ -188,6 +185,7 @@ export const listCertificate: CertificateJson[] = [
     date: "Apr 2024",
     logo: "/images/certificate/certificate_1.jpg",
     type: 1,
+    link: "https://www.freecodecamp.org/certification/fcc8cbadbff-75a0-4e5b-b58d-69d5e26ca552/back-end-development-and-apis",
   },
   {
     title: "Python for Beginners",
@@ -195,6 +193,7 @@ export const listCertificate: CertificateJson[] = [
     date: "Sep 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-1NY2EVG5",
   },
   {
     title: "Python for Data Science",
@@ -202,6 +201,7 @@ export const listCertificate: CertificateJson[] = [
     date: "Sep 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-FB27BSWO",
   },
   {
     title: "PHP",
@@ -209,6 +209,7 @@ export const listCertificate: CertificateJson[] = [
     date: "Aug 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-G2GO4FNA",
   },
   {
     title: "React + Redux",
@@ -216,6 +217,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-TS7O72BR",
   },
   {
     title: "CSS",
@@ -223,6 +225,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-3BO3VEFF",
   },
   {
     title: "Javascript",
@@ -230,6 +233,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-ILKPZEQS",
   },
   {
     title: "SQL",
@@ -237,6 +241,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-P4BB7PBD",
   },
   {
     title: "Java",
@@ -244,6 +249,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-XQEDTHLS",
   },
   {
     title: "jQuery",
@@ -251,6 +257,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-3HE9N1AY",
   },
   {
     title: "HTML",
@@ -258,6 +265,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-SMWODWIQ",
   },
   {
     title: "Responsive Web Design",
@@ -265,6 +273,7 @@ export const listCertificate: CertificateJson[] = [
     date: "July 2021",
     logo: "/images/certificate/certificate_2.jpg",
     type: 2,
+    link: "https://www.sololearn.com/certificates/CT-GBQKA70U",
   },
   {
     title: "JavaScript Algorithms and Data Structures",
@@ -272,6 +281,7 @@ export const listCertificate: CertificateJson[] = [
     date: "Aug 2020",
     logo: "/images/certificate/certificate_1.jpg",
     type: 1,
+    link: "https://www.freecodecamp.org/certification/fcc8cbadbff-75a0-4e5b-b58d-69d5e26ca552/javascript-algorithms-and-data-structures",
   },
   {
     title: "Responsive Web Design",
@@ -279,6 +289,7 @@ export const listCertificate: CertificateJson[] = [
     date: "Mar 2020",
     logo: "/images/certificate/certificate_1.jpg",
     type: 1,
+    link: "https://www.freecodecamp.org/certification/fcc8cbadbff-75a0-4e5b-b58d-69d5e26ca552/responsive-web-design",
   },
 ];
 
