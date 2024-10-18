@@ -1,13 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   title: string;
   name: string;
   logo: string;
   date: string;
+  link: string;
   classes?: string;
 };
-const CertificateCard = ({ title, name, logo, date, classes }: Props) => {
+const CertificateCard = ({ title, name, logo, date, link, classes }: Props) => {
   return (
     <div
       className={
@@ -32,9 +34,11 @@ const CertificateCard = ({ title, name, logo, date, classes }: Props) => {
         </div>
       </div>
       <div className="flex justify-end">
-        <span className="mt-2 flex gap-2 h-8 w-fit text-sm text-zinc-400 bg-zinc-50/5 items-center px-3 rounded-lg hover:cursor-pointer group-hover:text-white">
-          <span className="material-symbols-rounded">open_in_new</span>
-        </span>
+        <Link target="_blank" href={link}>
+          <span className="mt-2 flex gap-2 h-8 w-fit text-sm text-zinc-400 bg-zinc-50/5 items-center px-3 rounded-lg hover:cursor-pointer group-hover:text-white">
+            <span className="material-symbols-rounded">open_in_new</span>
+          </span>
+        </Link>
       </div>
     </div>
   );

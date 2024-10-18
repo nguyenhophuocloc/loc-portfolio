@@ -44,6 +44,7 @@ type CertificateJson = {
   date: string;
   logo: string;
   type: number;
+  link: string;
 };
 
 type EducationJson = {

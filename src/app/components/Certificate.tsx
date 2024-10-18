@@ -41,8 +41,9 @@ const Certificate = () => {
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          {certificates.map(({ title, name, date, logo }, key) => (
+          {certificates.map(({ title, name, date, logo, link }, key) => (
             <CertificateCard
+              link={link}
               title={title}
               logo={logo}
               name={name}
