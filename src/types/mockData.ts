@@ -120,7 +120,7 @@ export const works: ProjectJson[] = [
 
 export const workExperience: ExperienceJson[] = [
   {
-    title: "Fullstack Developer",
+    title: "Web Developer",
     name: "TechVSI",
     logo: "/images/exp/exp_3.png",
     from: "2024",
