@@ -11,7 +11,7 @@ const About = () => {
             I am a <strong>web developer</strong> with over{" "} 
             <strong>two years of experience</strong> and a solid{" "}
             <strong>computer science background</strong>. Currently, as a{" "}
-            <strong>Junior Full-stack Developer</strong>, I am focused on{" "}
+            <strong>Junior Full-stack Web Developer</strong>, I am focused on{" "}
             <strong>updating my skills</strong> and{" "}
             <strong>contributing to the company</strong>. My{" "}
             <strong>long-term goals</strong> are to become a{" "}
