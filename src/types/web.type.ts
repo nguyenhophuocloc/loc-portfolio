@@ -11,9 +11,10 @@ type ProjectJson = {
   imgSrc: string;
   title: string;
   tags: string[];
-  from: string;
-  to: string;
+  from?: string;
+  to?: string;
   link?: string;
+  github?:string;
   detail: ProjectDetailJson;
 };
 

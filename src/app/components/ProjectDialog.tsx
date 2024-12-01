@@ -31,12 +31,16 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
               </div>
             </div>
             <div className="hidden lg:block">
-              <p className="text-sm text-zinc-800 bg-zinc-50 rounded-xl p-2 flex items-center gap-2 ">
-                <span className="material-symbols-rounded">calendar_month</span>{" "}
-                <span>
-                  {model.from} - {model.to}
-                </span>
-              </p>
+              {model.from && model.to && (
+                <p className="text-sm text-zinc-800 bg-zinc-50 rounded-xl p-2 flex items-center gap-2 ">
+                  <span className="material-symbols-rounded">
+                    calendar_month
+                  </span>{" "}
+                  <span>
+                    {model.from} - {model.to}
+                  </span>
+                </p>
+              )}
               {model.link && (
                 <Link
                   className="flex gap-1 items-center mt-1 underline"
@@ -60,30 +64,43 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
             <p>{model.detail.techstacks}</p>
           </div>
 
-          <div className="mt-2">
-            <p className="italic font-semibold mb-2">Responsibilities:</p>
-            <ul
-              className="list-disc pl-10 leading-1 tracking-tight space-y-2"
-              dangerouslySetInnerHTML={{
-                __html: model.detail.responsibilities,
-              }}
-            ></ul>
-          </div>
+          {model.detail.responsibilities.length > 0 && (
+            <div className="mt-2">
+              <p className="italic font-semibold mb-2">Responsibilities:</p>
+              <ul
+                className="list-disc pl-10 leading-1 tracking-tight space-y-2"
+                dangerouslySetInnerHTML={{
+                  __html: model.detail.responsibilities,
+                }}
+              ></ul>
+            </div>
+          )}
 
-          <div className="mt-4 flex gap-2">
-            {model.link && (
-              <>
-                <p className="italic font-semibold mb-2">Link:</p>
-                <Link
-                  href={model.link}
-                  target="_blank"
-                  className="underline italic"
-                >
-                  Click here
-                </Link>
-              </>
-            )}
-          </div>
+          {model.link && (
+            <div className="mt-4 flex gap-2">
+              <p className="italic font-semibold mb-2">Link:</p>
+              <Link
+                href={model.link}
+                target="_blank"
+                className="underline italic"
+              >
+                Click here
+              </Link>
+            </div>
+          )}
+
+          {model.github && (
+            <div className="mt-4 flex gap-2">
+              <p className="italic font-semibold mb-2">Source code:</p>
+              <Link
+                href={model.github}
+                target="_blank"
+                className="underline italic"
+              >
+                Click here
+              </Link>
+            </div>
+          )}
 
           <div className="mt-4 border-t border-dashed">
             <h1 className="text-[28px] text-center">Demo:</h1>
