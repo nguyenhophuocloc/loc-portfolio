@@ -10,7 +10,7 @@ import {
 
 export const works: ProjectJson[] = [
   {
-    imgSrc: "/images/project/tcb/img1.png",
+    imgSrc: "/images/project/tcb/thumb.png",
     title: "Techcombank Promotion Hub",
     tags: ["Website", "AEM", "Development"],
     from: "08/2024",
@@ -36,11 +36,11 @@ export const works: ProjectJson[] = [
     },
   },
   {
-    imgSrc: "/images/project/npf/img1.png",
+    imgSrc: "/images/project/npf/thumb.png",
     title: "Namperfume Official Website",
     tags: ["Ecommerce", "Nextjs", "Development"],
-    from: "12/2023",
-    to: "05/2024",
+    from: "01/2024",
+    to: "06/2024",
     link: "https://beta.namefragrance.vn/",
     detail: {
       images: [
@@ -78,7 +78,7 @@ export const works: ProjectJson[] = [
     imgSrc: "/images/project/nteam/img1.jpg",
     title: "BEME ERP System",
     tags: ["Web Application", "React", "Development"],
-    from: "01/2022",
+    from: "01/2023",
     to: "12/2023",
     detail: {
       images: [
@@ -114,6 +114,22 @@ export const works: ProjectJson[] = [
                 Focused on building efficient, high-performance, and smooth
                 functionality in all systems.
               </li>`,
+    },
+  },
+  {
+    imgSrc: "/images/project/grilli/thumb.png",
+    title: "Grilli Restaurant",
+    tags: ["LandingPage", "PetProject", "Development"],
+    link: "https://nguyenhophuocloc.github.io/grilli-restaurant/",
+    github: "https://github.com/nguyenhophuocloc/grilli-restaurant",
+    from: "",
+    to: "",
+    detail: {
+      images: [{ title: "Home page", img: "/images/project/grilli/img1.png" }],
+      description:
+        "Grilli is a fully responsive restaurant website, responsive for all devices, build using HTML, CSS, and JavaScript.",
+      techstacks: "HTML, CSS, Javascript.",
+      responsibilities: "",
     },
   },
 ];
