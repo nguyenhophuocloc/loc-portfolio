@@ -92,27 +92,20 @@ export const works: ProjectJson[] = [
         { title: "Order form", img: "/images/project/nteam/img8.jpg" },
       ],
       description:
-        "Developed a full-featured e-commerce website with core functionalities like search, filters, product ordering, mail notifications, online payments, product reviews, and ratings.",
+        " Developed an ERP system for enterprises to streamline resource planning, integrating and digitizing processes across finance, HR, delivery, and customer care departments.",
       techstacks:
-        "Next.js, TypeScript, Tailwind CSS, shadcn-ui, Redux Toolkit, React-Query, React Hook Form, Swiper.",
+        " ReactJs, Typescript, Antdesign, Tailwindcss, zustand, react-kanban, react-webcam, react-geolocated, react-qr-barcode-scanner.",
       responsibilities: ` <li>
-                Developed and maintained a large-scale e-commerce platform,
-                ensuring reliability, security, and performance.
+               Designed use-case scenarios and developed the software architecture.
               </li>
               <li>
-                Collaborated with cross-functional teams to resolve issues and
-                optimize workflows.
+                Balanced functional requirements with aesthetic UI/UX designs.
               </li>
               <li>
-                Implemented UI/UX from mockups, ensuring a seamless user
-                experience.
+                Implemented core features on the front-end.
               </li>
               <li>
-                Worked with product managers to design innovative features.
-              </li>
-              <li>
-                Focused on building efficient, high-performance, and smooth
-                functionality in all systems.
+                Conducted ongoing usability tests and addressed bugs to ensure system stability
               </li>`,
     },
   },
