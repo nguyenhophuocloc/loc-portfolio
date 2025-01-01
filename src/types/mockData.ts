@@ -125,6 +125,33 @@ export const works: ProjectJson[] = [
       responsibilities: "",
     },
   },
+  {
+    imgSrc: "/images/project/netflix/thumb.png",
+    title: "Netflix clone",
+    tags: ["MERN", "PetProject", "Development"],
+    link: "https://netflix-clone-production-0ddd.up.railway.app/",
+    from: "",
+    to: "",
+    detail: {
+      images: [
+        { title: "Home page", img: "/images/project/netflix/thumb.png" },
+        { title: "Watch page", img: "/images/project/netflix/img1.png" },
+        { title: "Search movie page", img: "/images/project/netflix/img2.png" },
+        {
+          title: "Search person page",
+          img: "/images/project/netflix/img3.png",
+        },
+        {
+          title: "Search history page",
+          img: "/images/project/netflix/img4.png",
+        },
+      ],
+      description:
+        "A feature-rich Netflix clone with JWT authentication, providing a responsive UI that adapts seamlessly to all devices. Users can browse movies and TV shows, search for actors and movies, and even watch trailers. The app includes search history tracking and suggestions for similar movies/TV shows, offering an immersive streaming-like experience.",
+      techstacks: "React.js, Node.js, Express.js, MongoDB, Tailwind",
+      responsibilities: "",
+    },
+  },
 ];
 
 export const workExperience: ExperienceJson[] = [
