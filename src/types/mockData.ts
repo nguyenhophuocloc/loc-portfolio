@@ -110,22 +110,6 @@ export const works: ProjectJson[] = [
     },
   },
   {
-    imgSrc: "/images/project/grilli/thumb.png",
-    title: "Grilli Restaurant",
-    tags: ["LandingPage", "PetProject", "Development"],
-    link: "https://nguyenhophuocloc.github.io/grilli-restaurant/",
-    github: "https://github.com/nguyenhophuocloc/grilli-restaurant",
-    from: "",
-    to: "",
-    detail: {
-      images: [{ title: "Home page", img: "/images/project/grilli/img1.png" }],
-      description:
-        "Grilli is a fully responsive restaurant website, responsive for all devices, build using HTML, CSS, and JavaScript.",
-      techstacks: "HTML, CSS, Javascript.",
-      responsibilities: "",
-    },
-  },
-  {
     imgSrc: "/images/project/netflix/thumb.png",
     title: "Netflix clone",
     tags: ["MERN", "PetProject", "Development"],
@@ -149,6 +133,22 @@ export const works: ProjectJson[] = [
       description:
         "A feature-rich Netflix clone with JWT authentication, providing a responsive UI that adapts seamlessly to all devices. Users can browse movies and TV shows, search for actors and movies, and even watch trailers. The app includes search history tracking and suggestions for similar movies/TV shows, offering an immersive streaming-like experience.",
       techstacks: "React.js, Node.js, Express.js, MongoDB, Tailwind",
+      responsibilities: "",
+    },
+  },
+  {
+    imgSrc: "/images/project/grilli/thumb.png",
+    title: "Grilli Restaurant",
+    tags: ["LandingPage", "PetProject", "Development"],
+    link: "https://nguyenhophuocloc.github.io/grilli-restaurant/",
+    github: "https://github.com/nguyenhophuocloc/grilli-restaurant",
+    from: "",
+    to: "",
+    detail: {
+      images: [{ title: "Home page", img: "/images/project/grilli/img1.png" }],
+      description:
+        "Grilli is a fully responsive restaurant website, responsive for all devices, build using HTML, CSS, and JavaScript.",
+      techstacks: "HTML, CSS, Javascript.",
       responsibilities: "",
     },
   },
