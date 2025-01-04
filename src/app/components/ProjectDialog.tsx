@@ -102,6 +102,16 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
             </div>
           )}
 
+          {model.detail.account && (
+            <div className="mt-4 flex gap-2">
+              <p className="italic font-semibold mb-2">Account:</p>
+              <p>
+                {model.detail.account.username} |{" "}
+                {model.detail.account.password}
+              </p>
+            </div>
+          )}
+
           <div className="mt-4 border-t border-dashed">
             <h1 className="text-[28px] text-center">Demo:</h1>
             <div className="mt-4 flex flex-col gap-1 items-center w-full">

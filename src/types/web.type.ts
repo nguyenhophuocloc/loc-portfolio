@@ -1,10 +1,16 @@
 import { ReactNode } from "react";
 
+type ProjectAccountJson = {
+  username: string;
+  password: string;
+};
+
 type ProjectDetailJson = {
   images: { title: string; img: string }[];
   description: string;
   techstacks: string;
   responsibilities: string;
+  account?: ProjectAccountJson;
 };
 
 type ProjectJson = {
@@ -14,7 +20,7 @@ type ProjectJson = {
   from?: string;
   to?: string;
   link?: string;
-  github?:string;
+  github?: string;
   detail: ProjectDetailJson;
 };
 

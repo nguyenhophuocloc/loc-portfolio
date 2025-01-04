@@ -132,7 +132,9 @@ export const works: ProjectJson[] = [
       ],
       description:
         "A feature-rich Netflix clone with JWT authentication, providing a responsive UI that adapts seamlessly to all devices. Users can browse movies and TV shows, search for actors and movies, and even watch trailers. The app includes search history tracking and suggestions for similar movies/TV shows, offering an immersive streaming-like experience.",
-      techstacks: "React.js, Node.js, Express.js, MongoDB, Tailwind",
+      techstacks:
+        "React.js, Node.js, Express.js, MongoDB, Tailwind, Zustand, MongoDB",
+      account: { username: "john@gmail.com", password: "123456" },
       responsibilities: "",
     },
   },
@@ -141,7 +143,6 @@ export const works: ProjectJson[] = [
     title: "Grilli Restaurant",
     tags: ["LandingPage", "PetProject", "Development"],
     link: "https://nguyenhophuocloc.github.io/grilli-restaurant/",
-    github: "https://github.com/nguyenhophuocloc/grilli-restaurant",
     from: "",
     to: "",
     detail: {
