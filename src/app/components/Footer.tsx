@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ButtonPrimary } from "./Button";
 import Image from "next/image";
+import { socialLinks } from "@/types/mockData";
 
 const sitemap = [
   {
@@ -48,6 +49,7 @@ const socials = [
   // },
 ];
 const Footer = () => {
+  const curYear = new Date().getFullYear();
   return (
     <footer className="section">
       <div className="container">
@@ -57,12 +59,29 @@ const Footer = () => {
               Let&apos;s work together today!
             </h2>
 
-            <ButtonPrimary
-              href="mailto:nguyenhophuocloc.cb@gmail.com"
-              label="Start project"
-              icon="chevron_right"
-              classes="reveal-up"
-            />
+            <div className="flex gap-4">
+              <ButtonPrimary
+                href="mailto:nguyenhophuocloc.cb@gmail.com"
+                label="Start project"
+                icon="chevron_right"
+                classes="reveal-up"
+              />
+
+              <div className="flex items-center gap-2 mt-auto">
+                {socialLinks.map(({ href, icon }, key) => (
+                  <Link
+                    key={key}
+                    href={href}
+                    className="w-12 h-12 grid place-items-center
+              ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color]
+              hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
+                    target="_blank"
+                  >
+                    {icon}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4 lg:pl-20">
@@ -115,7 +134,7 @@ const Footer = () => {
           </Link>
 
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2024 <span className="text-zinc-200">nguyenhophuocloc</span>
+            &copy; {curYear} <span className="text-zinc-200">nguyenhophuocloc</span>
           </p>
         </div>
       </div>
