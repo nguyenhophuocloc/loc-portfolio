@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import About from "./components/About";
 import Certificate from "./components/Certificate";
-import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
@@ -40,7 +39,6 @@ export default function Home() {
       <Skill />
       <Work />
       <Certificate />
-      <Contact />
     </main>
   );
 }
