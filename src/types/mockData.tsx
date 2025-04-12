@@ -209,7 +209,7 @@ export const aboutItems: AboutJson[] = [
   // },
   {
     label: 'Years of experience',
-    number: 2,
+    number: 3,
   },
 ];
 
