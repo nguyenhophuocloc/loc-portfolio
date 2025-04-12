@@ -126,9 +126,9 @@ const Footer = () => {
         <div className="flex items-center justify-between pt-10 mb-8">
           <Link href="/" className="logo reveal-up">
             <Image
-              src={"/images/colorcode.png"}
-              width={40}
-              height={40}
+              src={"/images/L_logo.png"}
+              width={60}
+              height={60}
               alt="logo"
             />
           </Link>
