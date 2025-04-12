@@ -6,8 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { listGroupSkill, skillItem } from "@/types/mockData";
 
 const Skill = () => {
-  const [selectedGroup, setSelectedGroup] = useState(0);
-  const [skills, setSkills] = useState(skillItem);
+  const [selectedGroup, setSelectedGroup] = useState(1);
+  const [skills, setSkills] = useState(skillItem.filter((item) => item.type === 1));
 
   const handleSelected = (value: number) => {
     setSelectedGroup(value);

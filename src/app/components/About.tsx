@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "@public/images/colorcode.png";
+import Logo from "@public/images/L_logo.png";
 import { aboutItems } from "@/types/mockData";
 
 const About = () => {
@@ -39,8 +39,8 @@ const About = () => {
             <Image
               src={Logo}
               alt="Logo"
-              width={30}
-              height={30}
+              width={50}
+              height={50}
               className="ml-auto md:w-[40px] md:h-[40px]"
             />
           </div>
