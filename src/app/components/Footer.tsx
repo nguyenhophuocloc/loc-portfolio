@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ButtonPrimary } from "./Button";
 import Image from "next/image";
 import { socialLinks } from "@/types/mockData";
+import Logo from "@public/images/L_logo.png";
 
 const sitemap = [
   {
@@ -126,9 +127,9 @@ const Footer = () => {
         <div className="flex items-center justify-between pt-10 mb-8">
           <Link href="/" className="logo reveal-up">
             <Image
-              src={"/images/L_logo.png"}
-              width={60}
-              height={60}
+              src={Logo}
+              width={50}
+              height={50}
               alt="logo"
             />
           </Link>
