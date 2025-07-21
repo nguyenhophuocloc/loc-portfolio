@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     images: ['/images/meta.jpg'],
   },
   verification: {
-    google: 'lkzIUnK9Itqfr94oWS1ItktHza0v9P0H1KVvw8',
+    google: 'lkzIUnK9Itqfr94oWS1ItktHza0v9P0H1KVvw8-9LHg',
   },
 };
 
