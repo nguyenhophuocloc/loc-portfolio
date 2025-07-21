@@ -4,6 +4,7 @@ import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
     description: 'Nguyen Ho Phuoc Loc Portfolio',
     type: 'website',
     images: ['/images/meta.jpg'],
+  },
+  verification: {
+    google: 'lkzIUnK9Itqfr94oWS1ItktHza0v9P0H1KVvw8',
   },
 };
 
@@ -43,6 +47,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.className} scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-zinc-500`}
     >
+      <GoogleAnalytics gaId="G-CG74ZNHNJN" />
       <body suppressHydrationWarning>
         <Header />
         {children}
