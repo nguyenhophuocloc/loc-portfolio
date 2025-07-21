@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://nguyenhophuocloc.vercel.app/",
+    sitemap: "https://nguyenhophuocloc.vercel.app/sitemap.xml",
   };
 }
