@@ -62,8 +62,9 @@ const Footer = () => {
 
             <div className="flex gap-4">
               <ButtonPrimary
-                href="mailto:nguyenhophuocloc.cb@gmail.com"
+                href="https://www.linkedin.com/in/nguyen-ho-phuoc-loc/overlay/contact-info/"
                 label="Start project"
+                target="_blank"
                 icon="chevron_right"
                 classes="reveal-up"
               />

@@ -37,8 +37,9 @@ const Header = () => {
         </div>
 
         <Link
-          href={"#contact"}
+          href={"https://www.linkedin.com/in/nguyen-ho-phuoc-loc/overlay/contact-info/"}
           className="btn btn-secondary max-md:hidden md:justify-self-end"
+          target="_blank"
         >
           Contact Me
         </Link>

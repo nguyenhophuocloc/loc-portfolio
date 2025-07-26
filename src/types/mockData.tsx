@@ -159,21 +159,37 @@ export const works: ProjectJson[] = [
 export const workExperience: ExperienceJson[] = [
   {
     title: 'Web Developer',
-    name: 'TechVSI',
-    logo: '/images/exp/exp_3.png',
-    from: '2024',
+    name: 'rapiddweller',
+    logo: '/images/exp/exp_4.png',
+    from: '2025',
     to: 'Present',
-    type: 'Full-time',
+    type: 'Hybrid',
     address: 'Ho Chi Minh City, Viet Nam',
     description: `
-      <li><strong>Analyze requirements</strong> and <strong>propose technical solutions</strong>.</li>
-      <li><strong>Work collaboratively</strong> with AEM developers to <strong>develop the banking website</strong>.</li>
-      <li><strong>Optimize legacy code</strong> for <strong>better performance</strong>.</li>
-      <li><strong>Implement UI/UX</strong> from design.</li>
+      <li><strong>Built custom plugins</strong> for WordPress and Shopware, and <strong>updated website UI and content</strong> based on SEO and content team feedback.</li>
+      <li><strong>Integrated SEO tools (GA4, Google Ads, etc.)</strong> to improve search visibility and track marketing performance.</li>
+      <li><strong>Implemented GDPR-compliant tracking setups</strong> using cookie consent tools and anonymized analytics where required.</li>
+      <li><strong>Optimized site speed and Core Web Vitals</strong> using caching strategies, lazy loading, and PageSpeed Insights.</li>
+      <li><strong>Handled full-site deployments</strong> from staging setup and data migration to go-live and post-launch maintenance, upgrades, and technical optimizations.</li>
     `,
   },
   {
-    title: 'Frontend Developer',
+    title: 'Web Developer',
+    name: 'TechVSI',
+    logo: '/images/exp/exp_3.png',
+    from: '06/2024',
+    to: '10/2024',
+    type: 'Full-time',
+    address: 'Ho Chi Minh City, Viet Nam',
+    description: `
+      <li><strong>Worked directly with the client’s development team</strong> to maintain and enhance a large-scale enterprise web system.</li>
+      <li><strong>Analyzed functional requirements</strong> and proposed <strong>technical solutions</strong> based on client inputs and internal PM directives.</li>
+      <li><strong>Refactored legacy code</strong> to improve <strong>performance</strong>, <strong>readability</strong>, and <strong>maintainability</strong>.</li>
+      <li><strong>Implemented responsive UI</strong> from Figma designs, ensuring <strong>pixel-perfect</strong> layouts and consistent cross-browser experience.</li>
+    `,
+  },
+  {
+    title: 'Frontend Team Lead',
     name: 'namperfume',
     logo: '/images/exp/exp_2.jpg',
     from: '2022',
@@ -181,10 +197,10 @@ export const workExperience: ExperienceJson[] = [
     type: 'Full-time',
     address: 'Ho Chi Minh City, Viet Nam',
     description: `
-      <li><strong>Developed</strong> the company's <strong>ERP system</strong> and <strong>official e-commerce website</strong>.</li>
-      <li><strong>Collaborated</strong> with <strong>cross-functional teams</strong> to <strong>improve project timelines</strong>.</li>
-      <li><strong>Wrote reusable code</strong> that <strong>shortened future development cycles</strong>.</li>
-      <li><strong>Reviewed code</strong> and <strong>developed efficient solutions</strong> to <strong>enhance performance</strong> and <strong>reduce load times</strong>.</li>
+      <li><strong>Led frontend development</strong> for the company’s <strong>ERP system</strong> and <strong>official e-commerce website</strong>, ensuring responsive UI and performance optimization.</li>
+      <li><strong>Collaborated with backend, design, and QA teams</strong> to streamline workflows and <strong>improve delivery timelines</strong>.</li>
+      <li><strong>Built and maintained reusable components</strong>, reducing duplication and <strong>accelerating future development cycles</strong>.</li>
+      <li><strong>Reviewed pull requests</strong> and implemented <strong>performance-focused solutions</strong> to enhance speed and <strong>reduce page load times</strong> by ~30%.</li>
     `,
   },
   {
@@ -196,8 +212,9 @@ export const workExperience: ExperienceJson[] = [
     type: 'Full-time',
     address: 'Ho Chi Minh City, Viet Nam',
     description: `
-      <li><strong>Completed Java Web Developer</strong> training programs and participated in <strong>programming competitions</strong>.</li>
-      <li>Collaborated with an <strong>agile team</strong> to achieve tasks assigned by the <strong>team leader</strong>.</li>
+      <li><strong>Completed intensive Java Web Development training</strong> focused on <strong>backend fundamentals</strong>, <strong>MVC</strong>, and <strong>RESTful APIs</strong>.</li>
+      <li><strong>Joined internal coding challenges</strong>, demonstrating <strong>strong problem-solving</strong> and <strong>solid algorithmic thinking</strong>.</li>
+      <li><strong>Worked in an agile team</strong> to complete tasks under the mentorship of <strong>senior developers</strong>.</li>
     `,
   },
 ];
@@ -216,10 +233,19 @@ export const aboutItems: AboutJson[] = [
 export const listGroupCertificate: GroupJson[] = [
   // { name: "All", value: 0 },
   { name: 'freeCodeCamp', value: 1 },
+  { name: 'Udemy', value: 3 },
   { name: 'Sololearn', value: 2 },
 ];
 
 export const listCertificate: CertificateJson[] = [
+  {
+    title: 'WordPress Theme Development',
+    name: 'Udemy',
+    date: 'Jan 2025',
+    logo: '/images/certificate/certificate_3.png',
+    type: 3,
+    link: 'https://www.udemy.com/certificate/UC-04f02c0b-eef3-4e01-b8d1-ce153f52c43d/',
+  },
   {
     title: 'Back End Development and APIs',
     name: 'freeCodeCamp',
@@ -596,6 +622,36 @@ export const skillItem: SkillJson[] = [
     imgSrc: '/images/skill/postman.svg',
     label: 'Postman',
     desc: 'Software',
+    type: 8,
+  },
+  {
+    imgSrc: '/images/skill/google-search-console.svg',
+    label: 'Google Search Console',
+    desc: 'SEO tool',
+    type: 8,
+  },
+  {
+    imgSrc: '/images/skill/google-analytics-4.svg',
+    label: 'GA 4',
+    desc: 'SEO tool',
+    type: 8,
+  },
+  {
+    imgSrc: '/images/skill/google-ads.svg',
+    label: 'Google Ads',
+    desc: 'SEO tool',
+    type: 8,
+  },
+  {
+    imgSrc: '/images/skill/google-merchant-center.svg',
+    label: 'Merchant Center',
+    desc: 'SEO tool',
+    type: 8,
+  },
+  {
+    imgSrc: '/images/skill/matomo.svg',
+    label: 'Matomo',
+    desc: 'SEO tool',
     type: 8,
   },
 ];
