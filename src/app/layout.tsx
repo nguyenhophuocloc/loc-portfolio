@@ -5,23 +5,49 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import CanonicalTag from './components/CanonicalTag';
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 });
 
+const metaTitle = 'Nguyen Ho Phuoc Loc | Full-Stack Developer Portfolio';
+const metaDesc =
+  "Explore Nguyen Ho Phuoc Loc's portfolio – a full-stack developer specializing in web applications, modern design, and scalable solutions.";
+
 export const metadata: Metadata = {
-  title: 'Nguyen Ho Phuoc Loc',
-  description: 'Nguyen Ho Phuoc Loc Portfolio',
+  title: metaTitle,
+  description: metaDesc,
+  keywords: [
+    'developer',
+    'portfolio',
+    'Nguyen Ho Phuoc Loc',
+    'Nguyễn Hồ Phước Lộc',
+    'web dev',
+    'full-stack',
+    'React',
+  ],
+  authors: [{ name: 'Nguyen Ho Phuoc Loc' }],
+  publisher: 'Nguyen Ho Phuoc Loc',
   openGraph: {
-    title: 'Nguyen Ho Phuoc Loc',
-    description: 'Nguyen Ho Phuoc Loc Portfolio',
+    title: metaTitle,
+    description: metaDesc,
     type: 'website',
     images: ['/images/meta.jpg'],
   },
   verification: {
     google: 'lkzIUnK9Itqfr94oWS1ItktHza0v9P0H1KVvw8-9LHg',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
   },
 };
 
@@ -50,6 +76,7 @@ export default function RootLayout({
       <GoogleAnalytics gaId="G-CG74ZNHNJN" />
       <body suppressHydrationWarning>
         <Header />
+        <CanonicalTag />
         {children}
         <Footer />
         <Script
