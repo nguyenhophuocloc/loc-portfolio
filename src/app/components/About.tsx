@@ -8,14 +8,14 @@ const About = () => {
       <div className="container">
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-            I am a <strong>web developer</strong> with over{" "} 
+            I'm a <strong>web developer</strong> with over{" "} 
             <strong>3 years of experience</strong> and a solid{" "}
             <strong>computer science background</strong>. Currently, as a{" "}
             <strong>Full-stack Web Developer</strong>, I am focused on{" "}
             <strong>updating my skills</strong> and{" "}
             <strong>contributing to the company</strong>. My{" "}
-            <strong>long-term goals</strong> are to become a{" "}
-            <strong>team leader</strong> and enhance my{" "}
+            <strong>long-term goals</strong> are to {" "}
+            <strong>strengthen my technical expertise</strong> and enhance my{" "}
             <strong>international communication</strong>. My dream is to{" "}
             <strong>build scalable modern websites</strong> for the future.
           </p>
