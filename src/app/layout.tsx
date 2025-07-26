@@ -52,15 +52,20 @@ export const metadata: Metadata = {
 };
 
 const jsonLdData = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Nguyen Ho Phuoc Loc',
-  jobTitle: 'Web Developer',
-  url: 'https://nguyenhophuocloc.vercel.app/',
-  sameAs: [
-    'https://www.linkedin.com/in/nguyen-ho-phuoc-loc/',
-    'https://github.com/nguyenhophuocloc',
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nguyen Ho Phuoc Loc",
+  "alternateName": "Nguyễn Hồ Phước Lộc",
+  "jobTitle": "Full-Stack Web Developer",
+  "url": "https://nguyenhophuocloc.vercel.app/",
+  "sameAs": [
+    "https://www.linkedin.com/in/nguyen-ho-phuoc-loc/",
+    "https://github.com/nguyenhophuocloc"
   ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance / Remote"
+  }
 };
 
 export default function RootLayout({
