@@ -9,9 +9,9 @@ const About = () => {
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
             I am a <strong>web developer</strong> with over{" "} 
-            <strong>two years of experience</strong> and a solid{" "}
+            <strong>3 years of experience</strong> and a solid{" "}
             <strong>computer science background</strong>. Currently, as a{" "}
-            <strong>Junior Full-stack Web Developer</strong>, I am focused on{" "}
+            <strong>Full-stack Web Developer</strong>, I am focused on{" "}
             <strong>updating my skills</strong> and{" "}
             <strong>contributing to the company</strong>. My{" "}
             <strong>long-term goals</strong> are to become a{" "}
