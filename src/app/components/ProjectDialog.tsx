@@ -1,18 +1,21 @@
-"use client";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { ProjectJson } from "@/types/web.type";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { ProjectJson } from '@/types/web.type';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const ProjectDialog = ({ model }: { model: ProjectJson }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0 hover:cursor-pointer">
+        <button
+          className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0 hover:cursor-pointer"
+          aria-label="Show more"
+        >
           <span className="material-symbols-rounded" aria-hidden="true">
             arrow_outward
           </span>
-        </div>
+        </button>
       </DialogTrigger>
       <DialogContent className="dialog-content p-0 lg:min-w-[100vw] lg:min-h-[100vh] lg:mt-10 border-none bg-zinc-800/50 max-h-screen overflow-y-scroll z-50">
         <div className="bg-zinc-700 rounded-2xl p-[64px] max-md:p-[32px]">
@@ -35,7 +38,7 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
                 <p className="text-sm text-zinc-800 bg-zinc-50 rounded-xl p-2 flex items-center gap-2 ">
                   <span className="material-symbols-rounded">
                     calendar_month
-                  </span>{" "}
+                  </span>{' '}
                   <span>
                     {model.from} - {model.to}
                   </span>
@@ -106,7 +109,7 @@ const ProjectDialog = ({ model }: { model: ProjectJson }) => {
             <div className="mt-4 flex gap-2">
               <p className="italic font-semibold mb-2">Account:</p>
               <p>
-                {model.detail.account.username} |{" "}
+                {model.detail.account.username} |{' '}
                 {model.detail.account.password}
               </p>
             </div>
