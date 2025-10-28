@@ -1,5 +1,5 @@
 import Avatar from "@public/images/avatar-1.jpg";
-import HeroBanner3 from "@public/images/hero-banner3.png";
+import HeroBanner3 from "@public/images/hero-banner5.jpg";
 import Image from "next/image";
 import { ButtonOutline } from "./Button";
 
@@ -72,7 +72,7 @@ const Hero = () => {
             <Image
               src={HeroBanner3}
               alt="Nguyen Ho Phuoc Loc"
-              className="w-full scale-[0.8]"
+              className="w-full scale-[1]"
               width={480}
               height={600}
             />

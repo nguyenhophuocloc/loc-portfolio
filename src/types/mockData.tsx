@@ -189,7 +189,7 @@ export const workExperience: ExperienceJson[] = [
     `,
   },
   {
-    title: 'Frontend Team Lead',
+    title: 'Frontend Developer - Project Leader',
     name: 'namperfume',
     logo: '/images/exp/exp_2.jpg',
     from: '2022',
