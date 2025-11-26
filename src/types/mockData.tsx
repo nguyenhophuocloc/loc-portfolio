@@ -111,35 +111,6 @@ export const works: ProjectJson[] = [
     },
   },
   {
-    imgSrc: '/images/project/netflix/thumb.png',
-    title: 'Netflix clone',
-    tags: ['MERN', 'PetProject', 'Development'],
-    link: 'https://netflix-clone-production-0ddd.up.railway.app/',
-    from: '',
-    to: '',
-    detail: {
-      images: [
-        { title: 'Home page', img: '/images/project/netflix/thumb.png' },
-        { title: 'Watch page', img: '/images/project/netflix/img1.png' },
-        { title: 'Search movie page', img: '/images/project/netflix/img2.png' },
-        {
-          title: 'Search person page',
-          img: '/images/project/netflix/img3.png',
-        },
-        {
-          title: 'Search history page',
-          img: '/images/project/netflix/img4.png',
-        },
-      ],
-      description:
-        'A feature-rich Netflix clone with JWT authentication, providing a responsive UI that adapts seamlessly to all devices. Users can browse movies and TV shows, search for actors and movies, and even watch trailers. The app includes search history tracking and suggestions for similar movies/TV shows, offering an immersive streaming-like experience.',
-      techstacks:
-        'React.js, Node.js, Express.js, MongoDB, Tailwind, Zustand, MongoDB',
-      account: { username: 'john@gmail.com', password: '123456' },
-      responsibilities: '',
-    },
-  },
-  {
     imgSrc: '/images/project/grilli/thumb.png',
     title: 'Grilli Restaurant',
     tags: ['LandingPage', 'PetProject', 'Development'],
@@ -179,7 +150,7 @@ export const workExperience: ExperienceJson[] = [
     logo: '/images/exp/exp_3.png',
     from: '06/2024',
     to: '10/2024',
-    type: 'Full-time',
+    type: 'Contract',
     address: 'Ho Chi Minh City, Viet Nam',
     description: `
       <li><strong>Worked directly with the client’s development team</strong> to maintain and enhance a large-scale enterprise web system.</li>
