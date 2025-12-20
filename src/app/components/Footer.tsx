@@ -1,9 +1,8 @@
+import LogoImg from '@public/images/L_logo.png';
+import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ButtonPrimary } from './Button';
-import Image from 'next/image';
-import { socialLinks } from '@/types/mockData';
-import LogoImg from '@public/images/L_logo.png';
-import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
 const sitemap = [
   { label: 'Home', href: '#home' },
@@ -25,17 +24,13 @@ const Footer = () => {
   const curYear = new Date().getFullYear();
   return (
     <footer className="py-24 relative overflow-hidden border-t border-white/5">
-      {/* Background Glow bổ sung để Footer có chiều sâu */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 blur-[120px] -z-10" />
 
       <div className="container max-w-6xl mx-auto px-6">
-        {/* Phần chính: Chia 12 cột để kiểm soát khoảng cách tốt hơn */}
         <div className="grid grid-cols-12 gap-y-12 lg:gap-y-0 mb-20">
-          {/* Cột trái: Chiếm 7/12 cột - Kết hợp cảm ơn và khẳng định năng lực */}
           <div className="col-span-12 lg:col-span-7">
             <div className="flex flex-col gap-10">
               <div className="space-y-6">
-                {/* Badge trạng thái - Tạo độ uy tín thực tế ngay lập tức */}
                 <div className="flex items-center gap-2 w-fit px-3 py-1 rounded-full bg-blue-500/5 border border-blue-500/20">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
@@ -66,7 +61,6 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Thay dàn Social Icons bằng Expertise Tags để tránh trùng lặp với cột Connect */}
               <div className="flex flex-wrap items-center gap-2.5">
                 {[
                   'Web Developer',
@@ -81,13 +75,12 @@ const Footer = () => {
                     {skill}
                   </span>
                 ))}
-                {/* Một đường line trang trí để kết nối không gian */}
+
                 <div className="h-[1px] w-16 bg-white/10 ml-2 hidden md:block" />
               </div>
             </div>
           </div>
 
-          {/* Cột phải: Gom Sitemap và Socials lại gần nhau (Chiếm 5/12 cột) */}
           <div className="col-span-12 lg:col-span-5 grid grid-cols-2 gap-8 lg:justify-end">
             <div className="lg:justify-self-end">
               <p className="text-white font-bold text-[10px] uppercase tracking-[0.3em] mb-6 opacity-50">
@@ -126,25 +119,17 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom line: Tinh gọn lại */}
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Left: Branding */}
           <Link href="/" className="group flex items-center gap-4">
-            {/* Sửa đổi tại đây:
-       1. rounded-full: Đảm bảo hình tròn tuyệt đối.
-       2. overflow-hidden: Cắt bỏ mọi phần thừa để không bị lộ viền kép.
-       3. border-white/10: Viền đơn mảnh, tinh tế.
-    */}
             <div className="w-12 h-12 relative rounded-full overflow-hidden bg-zinc-900 flex items-center justify-center transition-all duration-500 group-hover:border-blue-500/50">
               <Image
                 src={LogoImg}
                 alt="Loc Logo"
-                width={40} // Tăng nhẹ size để lấp đầy khoảng trống tròn
+                width={40}
                 height={40}
                 className="group-hover:rotate-12 transition-transform duration-300"
               />
 
-              {/* Overlay hiệu ứng sáng nhẹ khi hover để che đi cảm giác viền thô */}
               <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/5 transition-colors duration-500" />
             </div>
 
@@ -158,7 +143,6 @@ const Footer = () => {
             </div>
           </Link>
 
-          {/* Right: Copyright & Slogan (Giữ nguyên) */}
           <div className="flex flex-col md:items-end gap-2 text-center md:text-right">
             <p className="text-zinc-500 text-[12px] font-medium tracking-tight">
               © 2018 — {curYear} <span className="mx-2 text-zinc-800">/</span>
