@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 type ProjectAccountJson = {
   username: string;
@@ -76,6 +76,25 @@ type SocialJson = {
   alt: string;
 };
 
+type StatItemJson = {
+  value: string;
+  label: string;
+  suffix?: string;
+};
+
+type StatJson = {
+  label: string;
+  value: string;
+  suffix: string;
+};
+
+type MilestoneJson = {
+  year: string;
+  title: string;
+  desc: string;
+  icon: string;
+};
+
 export type {
   ProjectJson,
   ProjectDetailJson,
@@ -86,4 +105,7 @@ export type {
   EducationJson,
   SkillJson,
   SocialJson,
+  StatItemJson,
+  StatJson,
+  MilestoneJson,
 };

@@ -1,124 +1,123 @@
-import Link from "next/link";
-import { ButtonPrimary } from "./Button";
-import Image from "next/image";
-import { socialLinks } from "@/types/mockData";
-import Logo from "@public/images/L_logo.png";
+import Link from 'next/link';
+import { ButtonPrimary } from './Button';
+import Image from 'next/image';
+import { socialLinks } from '@/types/mockData';
+import LogoImg from '@public/images/L_logo.png';
+import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
 const sitemap = [
-  {
-    label: "Home",
-    href: "#home",
-  },
-  {
-    label: "About",
-    href: "#about",
-  },
-  {
-    label: "Experience",
-    href: "#experience",
-  },
-  {
-    label: "Education",
-    href: "#education",
-  },
-  {
-    label: "Project",
-    href: "#project",
-  },
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Education', href: '#education' },
+  { label: 'Project', href: '#project' },
 ];
 
 const socials = [
+  { label: 'GitHub', href: 'https://www.github.com/nguyenhophuocloc' },
   {
-    label: "GitHub",
-    href: "https://www.github.com/nguyenhophuocloc",
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/nguyen-ho-phuoc-loc',
   },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/nguyen-ho-phuoc-loc",
-  },
-  // {
-  //   label: "0932 075 864",
-  //   href: "tel:0932075864",
-  // },
-  // // {
-  //   label: "nguyenhophuocloc.cb@gmail.com",
-  //   href: "mailto:nguyenhophuocloc.cb@gmail.com",
-  // },
-  // {
-  //   label: "CodePen",
-  //   href: "https://codepen.io/codewithsadee",
-  // },
 ];
+
 const Footer = () => {
   const curYear = new Date().getFullYear();
   return (
-    <footer className="section">
-      <div className="container">
-        <div className="lg:grid lg:grid-cols-2">
-          <div className="mb-10">
-            <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-              Let&apos;s work together today!
-            </h2>
+    <footer className="py-24 relative overflow-hidden border-t border-white/5">
+      {/* Background Glow bổ sung để Footer có chiều sâu */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/5 blur-[120px] -z-10" />
 
-            <div className="flex gap-4">
-              <ButtonPrimary
-                href="https://www.linkedin.com/in/nguyen-ho-phuoc-loc/overlay/contact-info/"
-                label="Start project"
-                target="_blank"
-                icon="chevron_right"
-                classes="reveal-up"
-              />
+      <div className="container max-w-6xl mx-auto px-6">
+        {/* Phần chính: Chia 12 cột để kiểm soát khoảng cách tốt hơn */}
+        <div className="grid grid-cols-12 gap-y-12 lg:gap-y-0 mb-20">
+          {/* Cột trái: Chiếm 7/12 cột - Kết hợp cảm ơn và khẳng định năng lực */}
+          <div className="col-span-12 lg:col-span-7">
+            <div className="flex flex-col gap-10">
+              <div className="space-y-6">
+                {/* Badge trạng thái - Tạo độ uy tín thực tế ngay lập tức */}
+                <div className="flex items-center gap-2 w-fit px-3 py-1 rounded-full bg-blue-500/5 border border-blue-500/20">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-blue-500"></span>
+                  </span>
+                  <span className="text-[9px] font-bold text-blue-500 uppercase tracking-[0.2em]">
+                    Available for new opportunities
+                  </span>
+                </div>
 
-              <div className="flex items-center gap-2 mt-auto">
-                {socialLinks.map(({ href, icon, alt }, key) => (
-                  <Link
-                    key={key}
-                    href={href}
-                    aria-label={alt}
-                    className="w-12 h-12 grid place-items-center
-              ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color]
-              hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
-                    target="_blank"
+                <div className="space-y-4">
+                  <h3 className="text-3xl md:text-4xl font-bold tracking-tighter text-white leading-tight">
+                    Thanks for{' '}
+                    <span className="text-blue-500 italic">scrolling</span>.{' '}
+                    <br />
+                    Ready to bring{' '}
+                    <span className="bg-gradient-to-r from-zinc-100 to-zinc-500 bg-clip-text text-transparent">
+                      ideas to life.
+                    </span>
+                  </h3>
+                  <div className="w-fit">
+                    <ButtonPrimary
+                      label="Say hello"
+                      href="mailto:nguyenhophuocloc.cb@gmail.com"
+                      icon={<ArrowUpRight className="w-4 h-4" />}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Thay dàn Social Icons bằng Expertise Tags để tránh trùng lặp với cột Connect */}
+              <div className="flex flex-wrap items-center gap-2.5">
+                {[
+                  'Web Developer',
+                  'UI/UX Focused',
+                  'Core Performance',
+                  'Problem Solver',
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-1.5 rounded-xl bg-white/5 border border-white/10 text-zinc-400 text-[10px] font-bold uppercase tracking-widest hover:border-blue-500/50 hover:bg-blue-500/5 hover:text-white transition-all duration-300 cursor-default"
                   >
-                    {icon}
-                  </Link>
+                    {skill}
+                  </span>
                 ))}
+                {/* Một đường line trang trí để kết nối không gian */}
+                <div className="h-[1px] w-16 bg-white/10 ml-2 hidden md:block" />
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 lg:pl-20">
-            <div>
-              <p className="mb-2 reveal-up">Sitemap</p>
-
-              <ul>
-                {sitemap.map(({ label, href }, key) => (
-                  <li key={key}>
+          {/* Cột phải: Gom Sitemap và Socials lại gần nhau (Chiếm 5/12 cột) */}
+          <div className="col-span-12 lg:col-span-5 grid grid-cols-2 gap-8 lg:justify-end">
+            <div className="lg:justify-self-end">
+              <p className="text-white font-bold text-[10px] uppercase tracking-[0.3em] mb-6 opacity-50">
+                Sitemap
+              </p>
+              <ul className="space-y-3">
+                {sitemap.map((link, i) => (
+                  <li key={i}>
                     <Link
-                      href={href}
-                      className="block text-sm text-zinc-400 py-1 transition-colors
-                    hover:text-zinc-200 reveal-up"
+                      href={link.href}
+                      className="text-zinc-400 hover:text-white transition-colors text-sm"
                     >
-                      {label}
+                      {link.label}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-            <div>
-              <p className="mb-2 reveal-up">Contact</p>
-                
-              <ul>
-                {socials.map(({ label, href }, key) => (
-                  <li key={key}>
+            <div className="lg:justify-self-end">
+              <p className="text-white font-bold text-[10px] uppercase tracking-[0.3em] mb-6 opacity-50">
+                Connect
+              </p>
+              <ul className="space-y-3">
+                {socials.map((link, i) => (
+                  <li key={i}>
                     <Link
-                      href={href}
-                      target="_blank"
-                      aria-label={label}
-                      className="block text-sm text-zinc-400 py-1 transition-colors
-                    hover:text-zinc-200 reveal-up"
+                      href={link.href}
+                      className="text-zinc-400 hover:text-white transition-colors text-sm"
                     >
-                      {label}
+                      {link.label}
                     </Link>
                   </li>
                 ))}
@@ -127,19 +126,52 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-10 mb-8">
-          <Link href="/" className="logo reveal-up">
-            <Image
-              src={Logo}
-              width={50}
-              height={50}
-              alt="logo"
-            />
+        {/* Bottom line: Tinh gọn lại */}
+        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Left: Branding */}
+          <Link href="/" className="group flex items-center gap-4">
+            {/* Sửa đổi tại đây:
+       1. rounded-full: Đảm bảo hình tròn tuyệt đối.
+       2. overflow-hidden: Cắt bỏ mọi phần thừa để không bị lộ viền kép.
+       3. border-white/10: Viền đơn mảnh, tinh tế.
+    */}
+            <div className="w-12 h-12 relative rounded-full overflow-hidden bg-zinc-900 flex items-center justify-center transition-all duration-500 group-hover:border-blue-500/50">
+              <Image
+                src={LogoImg}
+                alt="Loc Logo"
+                width={40} // Tăng nhẹ size để lấp đầy khoảng trống tròn
+                height={40}
+                className="group-hover:rotate-12 transition-transform duration-300"
+              />
+
+              {/* Overlay hiệu ứng sáng nhẹ khi hover để che đi cảm giác viền thô */}
+              <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/5 transition-colors duration-500" />
+            </div>
+
+            <div className="flex flex-col">
+              <span className="text-white font-bold tracking-tighter text-sm uppercase">
+                nguyenhophuocloc
+              </span>
+              <span className="text-[10px] text-zinc-600 font-medium tracking-[0.2em] uppercase">
+                Portfolio v2.0
+              </span>
+            </div>
           </Link>
 
-          <p className="text-zinc-500 text-sm reveal-up">
-            &copy; {curYear} <span className="text-zinc-200">nguyenhophuocloc</span>
-          </p>
+          {/* Right: Copyright & Slogan (Giữ nguyên) */}
+          <div className="flex flex-col md:items-end gap-2 text-center md:text-right">
+            <p className="text-zinc-500 text-[12px] font-medium tracking-tight">
+              © 2018 — {curYear} <span className="mx-2 text-zinc-800">/</span>
+              <span className="text-zinc-300">Crafted with ❤️</span>
+            </p>
+
+            <div className="flex items-center gap-3 md:justify-end">
+              <div className="h-[1px] w-8 bg-zinc-800 hidden md:block" />
+              <p className="text-[9px] text-zinc-600 font-mono tracking-[0.4em] uppercase opacity-60">
+                MAKE IT WORK • THEN MAKE IT BETTER
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

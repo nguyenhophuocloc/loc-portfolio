@@ -1,92 +1,61 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {
   navOpen: boolean;
 };
 
 const Navbar = ({ navOpen }: Props) => {
-  const lastActiveLink = useRef<HTMLAnchorElement | null>(null);
-  const activeBox = useRef<HTMLDivElement | null>(null);
-
-  const initActiveBox = () => {
-    if (lastActiveLink?.current && activeBox?.current) {
-      activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
-      activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
-      activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
-      activeBox.current.style.height =
-        lastActiveLink.current.offsetHeight + "px";
-    }
-  };
-
-  const activeCurrentLink = (e: React.MouseEvent<HTMLElement>) => {
-    lastActiveLink?.current?.classList.remove("active");
-    const targetElement = e.currentTarget as HTMLElement;
-    targetElement.classList.add("active");
-
-    lastActiveLink.current = targetElement as HTMLAnchorElement;
-
-    if (activeBox?.current) {
-      activeBox.current.style.top = targetElement.offsetTop + "px";
-      activeBox.current.style.left = targetElement.offsetLeft + "px";
-      activeBox.current.style.width = targetElement.offsetWidth + "px";
-      activeBox.current.style.height = targetElement.offsetHeight + "px";
-    }
-  };
-
-  useEffect(initActiveBox, []);
-  if (typeof window !== "undefined") {
-    window.addEventListener("resize", initActiveBox);
-  }
+  const [activeTab, setActiveTab] = useState("#home");
 
   const navItems = [
-    {
-      label: "Home",
-      link: "#home",
-      className: "nav-link active",
-      ref: lastActiveLink,
-    },
-    {
-      label: "About",
-      link: "#about",
-      className: "nav-link",
-    },
-    {
-      label: "Experience",
-      link: "#experience",
-      className: "nav-link",
-    },
-    {
-      label: "Education",
-      link: "#education",
-      className: "nav-link",
-    },
-    {
-      label: "Project",
-      link: "#project",
-      className: "nav-link",
-    },
-    {
-      label: "Contact",
-      link: "#contact",
-      className: "nav-link md:hidden",
-    },
+    { label: "Home", link: "#home" },
+    { label: "About", link: "#journey" },
+    { label: "Experience", link: "#experience" },
+    { label: "Project", link: "#project" },
+    { label: "Contact", link: "#contact", className: "md:hidden" },
   ];
+
   return (
-    <nav className={`navbar ${navOpen ? "active" : ""}`}>
-      {navItems.map(({ label, link, className, ref }, key) => (
+    <nav className={`
+      nav-container-fixed
+      fixed md:static top-[72px] right-4 left-4 p-2 rounded-2xl md:rounded-full
+      bg-zinc-900 md:bg-transparent backdrop-blur-2xl md:backdrop-blur-none
+      border border-white/10 md:border-none
+      flex flex-col md:flex-row items-center gap-1
+      transition-all duration-300 origin-top z-50
+      
+      ${navOpen 
+        ? "translate-y-0 opacity-100 visible" 
+        : "translate-y-[-20px] opacity-0 invisible md:translate-y-0 md:opacity-100 md:visible"
+      }
+    `}>
+      {navItems.map(({ label, link, className }) => (
         <Link
+          key={link}
           href={link}
-          key={key}
-          className={className}
-          ref={ref}
-          onClick={activeCurrentLink}
+          onClick={() => setActiveTab(link)}
+          className={`
+            relative px-5 py-2 text-sm font-medium transition-colors duration-300
+            ${activeTab === link ? "text-white" : "text-zinc-400 hover:text-white"}
+            ${className || ""}
+            w-full md:w-auto text-center block
+          `}
         >
+          <AnimatePresence>
+            {activeTab === link && (
+              <motion.div
+                layoutId="active-pill"
+                className="absolute inset-0 bg-white/10 md:bg-white/5 rounded-full z-[-1]"
+                transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}
+              />
+            )}
+          </AnimatePresence>
           {label}
         </Link>
       ))}
-      <div className="active-box" ref={activeBox}></div>
     </nav>
   );
 };

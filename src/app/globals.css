@@ -217,3 +217,14 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.custom-experience-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.custom-experience-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #52525b; /* zinc-600 */
+}
