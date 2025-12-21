@@ -1,11 +1,11 @@
+import { GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import Script from 'next/script';
-import { GoogleAnalytics } from '@next/third-parties/google';
 import CanonicalTag from './components/CanonicalTag';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -78,7 +78,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.className} scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-zinc-500`}
     >
-      <GoogleAnalytics gaId="G-CG74ZNHNJN" />
+      <GoogleTagManager gtmId="GTM-WLJDNW5B" />
       <body suppressHydrationWarning>
         <Header />
         <CanonicalTag />
