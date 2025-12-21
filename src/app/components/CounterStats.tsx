@@ -41,7 +41,7 @@ const StatItem: React.FC<StatItemJson> = ({ value, label, suffix = '' }) => {
 const CounterStats: React.FC = () => {
   const stats: StatJson[] = [
     { label: 'Years Experience', value: '3', suffix: '+' },
-    { label: 'Projects Completed', value: '15', suffix: '+' },
+    { label: 'Projects Completed', value: '10', suffix: '+' },
     { label: 'Technologies', value: '15', suffix: '+' },
     { label: 'Passion', value: '100', suffix: '%' },
   ];
