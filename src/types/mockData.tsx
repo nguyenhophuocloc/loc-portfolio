@@ -683,19 +683,19 @@ export const milestones:MilestoneJson[] = [
     {
       year: '2020',
       title: 'Web Fundamentals',
-      desc: 'Learned HTML, CSS, and JavaScript. Built static websites and gained a strong foundation in responsive layouts.',
+      desc: 'Learned HTML, CSS, JavaScript, and backend fundamentals. Built static websites and MVC-based web applications, understanding client–server interaction.',
       icon: '💻',
     },
     {
       year: '2022',
-      title: 'Modern Frontend Development',
-      desc: 'Dove into React and Node.js, building Single Page Applications. Worked primarily as a Frontend Developer.',
+      title: 'Modern Web Development',
+      desc: 'Built Single Page Applications using React and Node.js, with a focus on frontend development and backend integration.',
       icon: '⚛️',
     },
     {
       year: '2024',
       title: 'Transition to Full-stack',
-      desc: 'Stepped into full-stack development. Built APIs with Node.js and NestJS, improved English communication skills.',
+      desc: 'Stepped into full-stack development. Built RESTful APIs, worked with databases, explored various CMS platforms, and improved English communication skills.',
       icon: '🔧',
     },
     {
