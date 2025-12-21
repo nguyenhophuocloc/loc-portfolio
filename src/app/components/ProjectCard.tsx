@@ -9,7 +9,7 @@ type Props = {
 const ProjectCard = ({ data }: Props) => {
   return (
     <ProjectDialog model={data}>
-      <div className="group relative flex flex-col rounded-[2.5rem] bg-zinc-900/40 border border-white/5 overflow-hidden transition-all duration-700 hover:border-blue-500/30 shadow-2xl cursor-pointer">
+      <div className="group relative flex flex-col rounded-[2.5rem] bg-zinc-900/40 border border-white/5 overflow-hidden transition-all duration-700 hover:border-blue-500/30 shadow-2xl cursor-pointer project-card">
         <figure className="relative aspect-[16/10] overflow-hidden m-3 rounded-[1.8rem]">
           <Image
             src={data.imgSrc}

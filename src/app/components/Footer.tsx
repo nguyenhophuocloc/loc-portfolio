@@ -13,10 +13,10 @@ const sitemap = [
 ];
 
 const socials = [
-  { label: 'GitHub', href: 'https://www.github.com/nguyenhophuocloc' },
+  { label: 'GitHub', href: 'https://www.github.com/nguyenhophuocloc/' },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/nguyen-ho-phuoc-loc',
+    href: 'https://www.linkedin.com/in/nguyen-ho-phuoc-loc/',
   },
 ];
 
@@ -138,7 +138,7 @@ const Footer = () => {
                 nguyenhophuocloc
               </span>
               <span className="text-[10px] text-zinc-600 font-medium tracking-[0.2em] uppercase">
-                Portfolio v2.0.1
+                Portfolio v2.1.1
               </span>
             </div>
           </Link>

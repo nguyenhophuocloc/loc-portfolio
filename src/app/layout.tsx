@@ -60,7 +60,7 @@ const jsonLdData = {
   "url": "https://nguyenhophuocloc.vercel.app/",
   "sameAs": [
     "https://www.linkedin.com/in/nguyen-ho-phuoc-loc/",
-    "https://github.com/nguyenhophuocloc"
+    "https://github.com/nguyenhophuocloc/"
   ],
   "worksFor": {
     "@type": "Organization",
