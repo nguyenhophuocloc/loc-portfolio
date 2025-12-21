@@ -3,6 +3,14 @@
 This document tracks the evolution of my personal portfolio, highlighting feature development,
 refactoring efforts, bug fixes, and technical improvements over time.
 ---
+## [v2.1.3] - 2025-12-21
+### Overview
+This patch release focuses on updating the data used in the Counter component.
+
+### Changed
+- Updated **Counter component data** to reflect accurate counts.
+
+---
 ## [v2.1.2] - 2025-12-21
 ### Overview
 This patch release adds the `CHANGELOG.md` file to the project to document all previous versions and changes.
