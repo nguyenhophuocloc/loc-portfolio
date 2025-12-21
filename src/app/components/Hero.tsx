@@ -54,7 +54,7 @@ const Hero = () => {
 
             <div className="flex items-center gap-3">
               <Link
-                href="https://www.github.com/nguyenhophuocloc"
+                href="https://www.github.com/nguyenhophuocloc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-white/10 bg-white/5 text-gray-400 hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300"
@@ -64,7 +64,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                href="https://www.linkedin.com/in/nguyen-ho-phuoc-loc"
+                href="https://www.linkedin.com/in/nguyen-ho-phuoc-loc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-white/10 bg-white/5 text-gray-400 hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300"

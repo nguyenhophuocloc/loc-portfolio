@@ -636,7 +636,7 @@ export const skillItem: SkillJson[] = [
 
 export const socialLinks: SocialJson[] = [
   {
-    href: 'https://www.github.com/nguyenhophuocloc',
+    href: 'https://www.github.com/nguyenhophuocloc/',
     icon: (
       <svg
         width="24"
@@ -654,7 +654,7 @@ export const socialLinks: SocialJson[] = [
     alt: 'GitHub',
   },
   {
-    href: 'https://www.linkedin.com/in/nguyen-ho-phuoc-loc',
+    href: 'https://www.linkedin.com/in/nguyen-ho-phuoc-loc/',
     icon: (
       <svg
         width="24"
