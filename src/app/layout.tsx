@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: metaTitle,
     description: metaDesc,
     type: 'website',
-    images: ['/images/meta.jpg'],
+    images: ['/images/meta.png'],
   },
   verification: {
     google: 'lkzIUnK9Itqfr94oWS1ItktHza0v9P0H1KVvw8-9LHg',
