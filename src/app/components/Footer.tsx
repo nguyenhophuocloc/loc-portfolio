@@ -138,7 +138,7 @@ const Footer = () => {
                 nguyenhophuocloc
               </span>
               <span className="text-[10px] text-zinc-600 font-medium tracking-[0.2em] uppercase">
-                Portfolio v2.1.3
+                Portfolio v2.1.4
               </span>
             </div>
           </Link>

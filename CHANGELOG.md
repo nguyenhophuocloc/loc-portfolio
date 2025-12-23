@@ -3,6 +3,14 @@
 This document tracks the evolution of my personal portfolio, highlighting feature development,
 refactoring efforts, bug fixes, and technical improvements over time.
 ---
+## [v2.1.4] - 2025-12-23
+### Overview
+This patch release focuses on updating meta information assets to improve link previews and SEO consistency.
+
+### Changed
+- Updated **meta information images** used for social sharing and previews.
+
+---
 ## [v2.1.3] - 2025-12-21
 ### Overview
 This patch release focuses on updating the data used in the Counter component.
