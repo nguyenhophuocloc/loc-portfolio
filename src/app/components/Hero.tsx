@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-6 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
-            Crafting Scalable <br /> Web Experiences
+            Crafting Reality <br /> from Code
           </h1>
 
           <p className="text-gray-400 text-lg max-w-[45ch] mb-10 leading-relaxed">

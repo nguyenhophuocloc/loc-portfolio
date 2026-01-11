@@ -3,6 +3,13 @@
 This document tracks the evolution of my personal portfolio, highlighting feature development,
 refactoring efforts, bug fixes, and technical improvements over time.
 ---
+## [v2.1.5] - 2026-01-11
+### Overview
+This patch release focuses on updating the main page heading to improve content clarity and SEO structure.
+
+### Changed
+- Updated H1 heading to better reflect the page content and SEO intent.
+---
 ## [v2.1.4] - 2025-12-23
 ### Overview
 This patch release focuses on updating meta information assets to improve link previews and SEO consistency.
