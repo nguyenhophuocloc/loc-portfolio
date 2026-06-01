@@ -8,7 +8,6 @@ import CounterStats from './components/CounterStats';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Hero from './components/Hero';
-import Journey from './components/Journey';
 import Skill from './components/Skill';
 import Work from './components/Work';
 import ScrollToTop from './components/ScrollToTop';
@@ -37,7 +36,6 @@ export default function Home() {
     <main>
       <Hero />
       <CounterStats />
-      <Journey />
       <Experience />
       <Skill />
       <Education />

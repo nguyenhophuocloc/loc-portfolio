@@ -206,7 +206,7 @@ export const listGroupCertificate: GroupJson[] = [
   // { name: "All", value: 0 },
   { name: 'freeCodeCamp', value: 1 },
   { name: 'Udemy', value: 3 },
-  { name: 'Sololearn', value: 2 },
+  // { name: 'Sololearn', value: 2 },
 ];
 
 export const listCertificate: CertificateJson[] = [
