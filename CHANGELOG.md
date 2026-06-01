@@ -3,6 +3,12 @@
 This document tracks the evolution of my personal portfolio, highlighting feature development,
 refactoring efforts, bug fixes, and technical improvements over time.
 ---
+## [v2.1.6] - 2026-06-01
+### Overview
+Improve navbar scroll behavior and active state stability.
+Hidden Solo learn certificate.
+Hidden About section.
+---
 ## [v2.1.5] - 2026-01-11
 ### Overview
 This patch release focuses on updating the main page heading to improve content clarity and SEO structure.
