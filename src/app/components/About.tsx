@@ -40,8 +40,7 @@ const About = () => {
               src={Logo}
               alt="Logo"
               width={50}
-              height={50}
-              className="ml-auto md:w-[40px] md:h-[40px]"
+              className="ml-auto md:w-[40px] h-auto"
             />
           </div>
         </div>
