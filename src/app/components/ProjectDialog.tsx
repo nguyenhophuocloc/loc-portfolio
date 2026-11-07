@@ -1,159 +1,122 @@
 'use client';
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-  DialogTitle,
-  DialogDescription,
-} from '@/components/ui/dialog';
-import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
-import { ProjectJson } from '@/types/web.type';
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import type { Project } from '@/content/site';
+import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FlowDiagram from './FlowDiagram';
+import ToolIcon from './ToolIcon';
 
-type ProjectDialogProps = {
-  model: ProjectJson;
+type Props = {
+  project: Project;
   children: React.ReactNode;
 };
 
-const ProjectDialog = ({ model, children }: ProjectDialogProps) => {
+const ProjectDialog = ({ project, children }: Props) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
 
-      <DialogContent className="max-w-[95vw] w-[1200px] h-[90vh] p-0 border-zinc-800 bg-zinc-950/90 backdrop-blur-2xl overflow-hidden rounded-[2.5rem]">
-        <VisuallyHidden.Root>
-          <DialogTitle>{model.title}</DialogTitle>
-          <DialogDescription>
-            Detailed information and showcase of the project {model.title}
-          </DialogDescription>
-        </VisuallyHidden.Root>
-        <div className="sticky top-0 z-20 bg-zinc-950/50 backdrop-blur-md border-b border-white/5 px-8 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <DialogContent className="flex h-[92vh] w-[min(1200px,94vw)] max-w-none flex-col gap-0 overflow-hidden rounded-2xl border-rule bg-surface p-0 text-ink">
+        <header className="flex flex-col gap-4 border-b border-rule px-6 py-5 pr-14 sm:flex-row sm:items-end sm:justify-between sm:px-10">
           <div>
-            <h2 className="text-3xl font-bold tracking-tighter text-white">
-              {model.title}
-            </h2>
-            <div className="flex flex-wrap gap-2 mt-2">
-              {model.tags.map((tag, i) => (
-                <span
-                  key={i}
-                  className="text-[10px] uppercase tracking-widest text-blue-400 font-bold px-2 py-1 bg-blue-500/10 rounded-md"
-                >
-                  {tag}
-                </span>
+            <p className="text-sm text-muted">
+              {project.client}
+              {project.year ? `, ${project.year}` : ''}
+            </p>
+            <DialogTitle className="mt-1 text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
+              {project.title}
+            </DialogTitle>
+          </div>
+          {project.link && (
+            <Link
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-brand h-10 w-fit px-5 text-sm"
+            >
+              Open live site <ArrowUpRight className="h-4 w-4" aria-hidden />
+            </Link>
+          )}
+        </header>
+
+        <div className="flex-1 overflow-y-auto px-6 py-8 sm:px-10 sm:py-10">
+          <div className="grid gap-12 lg:grid-cols-12">
+            <aside className="space-y-8 lg:col-span-4">
+              <DialogDescription className="text-[17px] leading-relaxed text-ink">{project.summary}</DialogDescription>
+
+              <dl className="grid grid-cols-[5rem_1fr] gap-y-3 border-y border-rule py-5 text-sm">
+                <dt className="text-muted">Role</dt>
+                <dd>{project.role}</dd>
+                <dt className="text-muted">Stack</dt>
+                <dd className="leading-relaxed">{project.stack.join(', ')}</dd>
+              </dl>
+
+              <div>
+                <h3 className="text-sm font-semibold">What I did</h3>
+                <ul className="mt-3 space-y-3 text-[15px] leading-relaxed text-muted">
+                  {project.contributions.map((item) => (
+                    <li key={item} className="relative pl-4">
+                      <span aria-hidden className="absolute left-0 top-[0.7em] h-px w-2 bg-brand" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </aside>
+
+            <div className="space-y-10 lg:col-span-8">
+              {project.workflows && (
+                <ul className="space-y-4">
+                  {project.workflows.map((wf) => (
+                    <li key={wf.slug} className="overflow-hidden rounded-xl border border-rule bg-raised/40">
+                      <div className="relative h-28 border-b border-rule bg-paper/60">
+                        {wf.image ? (
+                          <Image
+                            src={wf.image}
+                            alt={`${wf.title} workflow in n8n`}
+                            fill
+                            sizes="(max-width: 1024px) 94vw, 760px"
+                            className="object-cover object-left-top"
+                          />
+                        ) : (
+                          <FlowDiagram steps={wf.flow} />
+                        )}
+                      </div>
+                      <div className="space-y-3 p-4">
+                        <h3 className="font-semibold">{wf.title}</h3>
+                        <p className="text-sm leading-relaxed text-muted">{wf.summary}</p>
+                        <ul className="flex gap-2">
+                          {wf.tools.map((tool) => (
+                            <li key={tool.name}>
+                              <ToolIcon tool={tool} size="sm" />
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {project.images.map((item, index) => (
+                <figure key={item.img}>
+                  <div className="overflow-hidden rounded-xl border border-rule bg-raised">
+                    <Image
+                      src={item.img}
+                      width={1200}
+                      height={800}
+                      sizes="(max-width: 1024px) 94vw, 760px"
+                      className="h-auto w-full"
+                      alt={`${project.title}: ${item.title}`}
+                      quality={100}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-sm text-muted">{item.title}</figcaption>
+                </figure>
               ))}
             </div>
           </div>
-
-          <div className="flex gap-3">
-            {model.link && (
-              <Link
-                href={model.link}
-                target="_blank"
-                className="flex items-center gap-2 px-6 py-3 bg-white text-zinc-950 rounded-xl font-bold text-sm hover:bg-zinc-200 transition-colors"
-              >
-                Live Preview{' '}
-                <span className="material-symbols-rounded text-sm">
-                  open_in_new
-                </span>
-              </Link>
-            )}
-            {model.github && (
-              <Link
-                href={model.github}
-                target="_blank"
-                className="flex items-center gap-2 px-6 py-3 bg-zinc-800 text-white rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors border border-white/5"
-              >
-                Source Code
-              </Link>
-            )}
-          </div>
-        </div>
-
-        <div className="overflow-y-auto h-full custom-scrollbar p-8 md:p-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-1 space-y-10">
-              <section>
-                <h4 className="text-xs uppercase tracking-[0.3em] text-zinc-500 font-bold mb-4">
-                  About Project
-                </h4>
-                <p className="text-zinc-300 leading-relaxed italic border-l-2 border-blue-500 pl-4">
-                  {model.detail.description}
-                </p>
-              </section>
-
-              <section className="p-6 rounded-3xl bg-white/[0.03] border border-white/5 space-y-6">
-                <div>
-                  <h4 className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold">
-                    Timeline
-                  </h4>
-                  <p className="text-white font-mono">
-                    {model.from} — {model.to}
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold">
-                    Tech Stack
-                  </h4>
-                  <p className="text-white text-sm leading-relaxed">
-                    {model.detail.techstacks}
-                  </p>
-                </div>
-                {model.detail.account && (
-                  <div className="p-3 rounded-xl bg-blue-500/5 border border-blue-500/10">
-                    <h4 className="text-[10px] uppercase tracking-widest text-blue-400 mb-1 font-bold">
-                      Demo Account
-                    </h4>
-                    <p className="text-xs text-zinc-300 font-mono">
-                      {model.detail.account.username} /{' '}
-                      {model.detail.account.password}
-                    </p>
-                  </div>
-                )}
-              </section>
-
-              {model.detail.responsibilities.length > 0 && (
-                <section>
-                  <h4 className="text-xs uppercase tracking-[0.3em] text-zinc-500 font-bold mb-4">
-                    Core Responsibilities
-                  </h4>
-                  <div
-                    className="prose prose-invert prose-sm max-w-none text-zinc-400 marker:text-blue-500"
-                    dangerouslySetInnerHTML={{
-                      __html: model.detail.responsibilities,
-                    }}
-                  />
-                </section>
-              )}
-            </div>
-
-            <div className="lg:col-span-2 space-y-12">
-              <h4 className="text-xs uppercase tracking-[0.3em] text-zinc-500 font-bold">
-                Visual Showcase
-              </h4>
-              <div className="flex flex-col gap-12">
-                {model.detail.images.map((item, key) => (
-                  <figure key={key} className="group/img relative">
-                    <div className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl">
-                      <Image
-                        src={item.img}
-                        width={1200}
-                        height={800}
-                        className="w-full h-auto object-contain transition-transform duration-700 group-hover/img:scale-[1.02]"
-                        alt={item.title}
-                        quality={100}
-                      />
-                    </div>
-                    <figcaption className="mt-4 text-center text-sm font-medium text-zinc-500 italic">
-                      — {item.title}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="h-20" />
         </div>
       </DialogContent>
     </Dialog>

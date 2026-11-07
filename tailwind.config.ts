@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import tailwindScrollbar from "tailwind-scrollbar";
+import tailwindAnimate from "tailwindcss-animate";
 
 const config: Config = {
     darkMode: ["class"],
@@ -11,7 +12,7 @@ const config: Config = {
   theme: {
   	extend: {
   		fontFamily: {
-  			sans: ["Inter", "sans-serif"]
+  			sans: ["var(--font-sans)", "system-ui", "sans-serif"]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -37,10 +38,6 @@ const config: Config = {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
   			accent: {
   				DEFAULT: 'hsl(var(--accent))',
   				foreground: 'hsl(var(--accent-foreground))'
@@ -49,6 +46,16 @@ const config: Config = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
+  			paper: 'rgb(var(--paper) / <alpha-value>)',
+  			surface: 'rgb(var(--surface) / <alpha-value>)',
+  			ink: 'rgb(var(--ink) / <alpha-value>)',
+  			muted: {
+  				DEFAULT: 'rgb(var(--muted) / <alpha-value>)',
+  				foreground: 'hsl(var(--muted-foreground))'
+  			},
+  			rule: 'rgb(var(--rule) / <alpha-value>)',
+  			raised: 'rgb(var(--raised) / <alpha-value>)',
+  			brand: 'rgb(var(--brand) / <alpha-value>)',
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
@@ -62,6 +69,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [tailwindScrollbar, require("tailwindcss-animate")],
+  plugins: [tailwindScrollbar, tailwindAnimate],
 };
 export default config;

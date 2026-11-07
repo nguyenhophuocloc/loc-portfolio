@@ -34,9 +34,6 @@ export function useScrollSpy(
   }, [sectionIds, threshold]);
 
   useEffect(() => {
-    // Set initial state
-    setActiveId(getActive());
-
     let ticking = false;
     const onScroll = () => {
       if (!ticking) {
@@ -48,6 +45,8 @@ export function useScrollSpy(
       }
     };
 
+    // Set initial state on the next frame (avoids sync setState in effect)
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [getActive]);

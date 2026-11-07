@@ -1,70 +1,50 @@
 'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import Logo from '@public/images/L_logo.png';
-import Navbar from './Navbar';
+import { profile } from '@/content/site';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import Navbar from './Navbar';
 
 const Header = () => {
-  const [navOpen, setNavOpen] = useState<boolean>(false);
+  const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Xử lý đổi style khi scroll
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'py-3' : 'py-6'
+      className={`fixed inset-x-0 top-0 z-40 border-b bg-paper/90 backdrop-blur-md transition-colors ${
+        scrolled ? 'border-rule' : 'border-transparent'
       }`}
     >
-      <div
-        className={`
-        max-w-screen-xl mx-auto px-4 flex justify-between items-center transition-all duration-300
-        ${
-          scrolled
-            ? 'bg-zinc-900/70 backdrop-blur-xl border border-white/10 py-2 px-6 rounded-full shadow-2xl'
-            : 'bg-transparent py-2'
-        }
-      `}
-      >
-        {/* Logo */}
-        <Link href="/" className="flex items-center group">
-          <Image
-            src={Logo}
-            alt="Loc Logo"
-            width={40}
-            height={40}
-            className="group-hover:rotate-12 transition-transform duration-300"
-          />
+      <div className="container flex h-16 items-center justify-between">
+        <Link href="#home" className="flex items-center gap-2 text-[15px] font-semibold tracking-[-0.01em]">
+          <span
+            aria-hidden
+            className="grid h-7 w-7 place-items-center rounded-lg bg-gradient-to-br from-[rgb(var(--brand-light))] via-brand to-[rgb(var(--brand-deep))] text-sm font-bold text-paper"
+          >
+            L
+          </span>
+          {profile.shortName}
         </Link>
 
-        <div className="flex items-center gap-4">
-          <div className="relative md:justify-self-center">
-            <button
-              className="p-2 md:hidden text-white hover:bg-white/10 rounded-lg transition-colors"
-              onClick={() => setNavOpen((prev) => !prev)}
-            >
-              {navOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+        <button
+          type="button"
+          className="-mr-2 grid h-10 w-10 place-items-center rounded-md md:hidden"
+          aria-label={navOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={navOpen}
+          aria-controls="site-nav"
+          onClick={() => setNavOpen((open) => !open)}
+        >
+          {navOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
 
-            <Navbar navOpen={navOpen} />
-          </div>
-
-          <Link
-            href="#contact"
-            className="hidden md:flex px-5 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-blue-600 hover:text-white transition-all active:scale-95"
-          >
-            Contact Me
-          </Link>
-        </div>
+        <Navbar open={navOpen} onNavigate={() => setNavOpen(false)} />
       </div>
     </header>
   );

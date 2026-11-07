@@ -1,62 +1,54 @@
-"use client";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { useScrollSpy } from "../hooks/useScrollSpy";
+'use client';
+import Link from 'next/link';
+import { useScrollSpy } from '../hooks/useScrollSpy';
 
-type Props = { navOpen: boolean };
+type Props = { open: boolean; onNavigate: () => void };
 
 const NAV_ITEMS = [
-  { label: "Home",       link: "#home" },
-  { label: "Experience", link: "#experience" },
-  { label: "Skill",      link: "#skill" },
-  { label: "Project",    link: "#project" },
-  { label: "Contact",    link: "#contact", className: "md:hidden" },
+  { label: 'Services', link: '#services' },
+  { label: 'Projects', link: '#work' },
+  { label: 'Experience', link: '#experience' },
+  { label: 'Contact', link: '#contact' },
 ];
 
-// Only the spy sections — Contact is excluded
-const SPY_IDS = ["#home", "#experience", "#skill", "#project"];
+const SPY_IDS = ['#home', ...NAV_ITEMS.map((item) => item.link)];
 
-export default function Navbar({ navOpen }: Props) {
-  const activeTab = useScrollSpy(SPY_IDS, { threshold: 0.3 });
+export default function Navbar({ open, onNavigate }: Props) {
+  const activeId = useScrollSpy(SPY_IDS, { threshold: 0.35 });
 
   return (
     <nav
-      className={`
-        fixed md:static top-[72px] right-4 left-4 p-2 rounded-2xl md:rounded-full
-        bg-zinc-900 md:bg-transparent backdrop-blur-2xl md:backdrop-blur-none
-        border border-white/10 md:border-none
-        flex flex-col md:flex-row items-center gap-1
-        transition-all duration-300 origin-top z-50
-        ${navOpen
-          ? "translate-y-0 opacity-100 visible"
-          : "translate-y-[-20px] opacity-0 invisible md:translate-y-0 md:opacity-100 md:visible"
-        }
-      `}
+      id="site-nav"
+      aria-label="Main"
+      className={`absolute inset-x-0 top-16 border-b border-rule bg-paper px-4 pb-4 md:static md:flex md:border-0 md:bg-transparent md:p-0 ${
+        open ? 'block' : 'hidden'
+      }`}
     >
-      {NAV_ITEMS.map(({ label, link, className }) => {
-        const isActive = activeTab === link;
-        return (
-          <Link
-            key={link}
-            href={link}
-            className={`
-              relative px-5 py-2 text-sm font-medium transition-colors duration-300
-              ${isActive ? "text-white" : "text-zinc-400 hover:text-white"}
-              ${className ?? ""}
-              w-full md:w-auto text-center block
-            `}
-          >
-            {isActive && (
-              <motion.div
-                layoutId="active-pill"
-                className="absolute inset-0 bg-white/10 md:bg-white/5 rounded-full -z-10"
-                transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}
-              />
-            )}
-            {label}
-          </Link>
-        );
-      })}
+      <ul className="flex flex-col md:flex-row md:items-center md:gap-8">
+        {NAV_ITEMS.map(({ label, link }) => {
+          const isActive = activeId === link;
+          return (
+            <li key={link}>
+              <Link
+                href={link}
+                onClick={onNavigate}
+                aria-current={isActive ? 'location' : undefined}
+                className={`relative block py-3 text-[15px] transition-colors md:py-1 ${
+                  isActive ? 'text-ink' : 'text-muted hover:text-ink'
+                }`}
+              >
+                {label}
+                <span
+                  aria-hidden
+                  className={`absolute -bottom-px left-0 hidden h-px bg-brand transition-[width] duration-300 md:block ${
+                    isActive ? 'w-full' : 'w-0'
+                  }`}
+                />
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 }

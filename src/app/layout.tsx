@@ -7,16 +7,18 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import './globals.css';
 
-const inter = Inter({
-  subsets: ['latin'],
+const sans = Inter({
+  subsets: ['latin', 'vietnamese'],
   display: 'swap',
+  variable: '--font-sans',
 });
 
-const metaTitle = 'Nguyen Ho Phuoc Loc | Full-Stack Developer Portfolio';
+const metaTitle = 'Nguyen Ho Phuoc Loc | Web Developer';
 const metaDesc =
-  "Explore Nguyen Ho Phuoc Loc's portfolio – a full-stack developer specializing in web applications, modern design, and scalable solutions.";
+  'Nguyen Ho Phuoc Loc is a web developer in Ho Chi Minh City: frontend, backend, WordPress and Shopware, technical SEO, and n8n automations with AI.';
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nguyenhophuocloc.vercel.app"),
   title: metaTitle,
   description: metaDesc,
   keywords: [
@@ -76,7 +78,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.className} scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-zinc-500`}
+      className={`${sans.variable} font-sans`}
     >
       <GoogleTagManager gtmId="GTM-WLJDNW5B" />
       <body suppressHydrationWarning>
