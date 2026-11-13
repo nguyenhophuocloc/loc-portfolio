@@ -23,7 +23,7 @@ const Header = () => {
       }`}
     >
       <div className="container flex h-16 items-center justify-between">
-        <Link href="#home" className="flex items-center gap-2 text-[15px] font-semibold tracking-[-0.01em]">
+        <Link href="/#home" className="flex items-center gap-2 text-[15px] font-semibold tracking-[-0.01em]">
           <span
             aria-hidden
             className="grid h-7 w-7 place-items-center rounded-lg bg-gradient-to-br from-[rgb(var(--brand-light))] via-brand to-[rgb(var(--brand-deep))] text-sm font-bold text-paper"

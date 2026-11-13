@@ -1,0 +1,472 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Loc Nguyen" [ref=f3e4] [cursor=pointer]:
+        - /url: "#home"
+        - generic [aria-hidden] [ref=f3e5]: L
+        - text: Loc Nguyen
+      - navigation "Main" [ref=f3e6]:
+        - list [ref=f3e7]:
+          - listitem [ref=f3e8]:
+            - link "Services" [ref=f3e9] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=f3e10]:
+            - link "Projects" [ref=f3e11] [cursor=pointer]:
+              - /url: "#work"
+          - listitem [ref=f3e12]:
+            - link "Experience" [ref=f3e13] [cursor=pointer]:
+              - /url: "#experience"
+          - listitem [ref=f3e14]:
+            - link "Contact" [ref=f3e15] [cursor=pointer]:
+              - /url: "#contact"
+  - main [ref=f3e16]:
+    - generic [ref=f3e18]:
+      - generic [ref=f3e19]:
+        - generic [ref=f3e20]:
+          - generic [ref=f3e21]:
+            - img "Nguyen Ho Phuoc Loc" [ref=f3e23]
+            - generic [ref=f3e24]:
+              - paragraph [ref=f3e25]: Nguyen Ho Phuoc Loc
+              - paragraph [ref=f3e26]: Web developer, Ho Chi Minh City, Vietnam
+          - heading "Websites, SEO & Everything Behind Them" [level=1] [ref=f3e27]
+          - paragraph [ref=f3e28]: Frontend, backend, WordPress and Shopware, and the technical SEO behind them. Plus n8n and AI automations that keep every site monitored and reported on.
+          - generic [ref=f3e29]:
+            - link "Start a conversation" [ref=f3e30] [cursor=pointer]:
+              - /url: "#contact"
+            - link "View projects" [ref=f3e33] [cursor=pointer]:
+              - /url: "#work"
+            - generic [ref=f3e34]:
+              - link "GitHub" [ref=f3e35] [cursor=pointer]:
+                - /url: https://www.github.com/nguyenhophuocloc/
+              - link "LinkedIn" [ref=f3e39] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/nguyen-ho-phuoc-loc/
+        - list [ref=f3e46]:
+          - listitem [ref=f3e47]:
+            - generic [ref=f3e49]:
+              - paragraph [ref=f3e50]: Search and tracking
+              - paragraph [ref=f3e51]: Indexed, measured, compliant
+            - list [ref=f3e52]:
+              - listitem [ref=f3e53]:
+                - generic [ref=f3e54]:
+                  - img "Search Console" [ref=f3e57]
+                  - tooltip "Search Console"
+              - listitem [ref=f3e58]:
+                - generic [ref=f3e59]:
+                  - img "GA4" [ref=f3e62]
+                  - tooltip "GA4"
+              - listitem [ref=f3e63]:
+                - generic [ref=f3e64]:
+                  - img "Google Ads" [ref=f3e67]
+                  - tooltip "Google Ads"
+              - listitem [ref=f3e68]:
+                - generic [ref=f3e69]:
+                  - img "Merchant Center" [ref=f3e72]
+                  - tooltip "Merchant Center"
+          - listitem [ref=f3e73]:
+            - generic [ref=f3e75]:
+              - paragraph [ref=f3e76]: Frontend
+              - paragraph [ref=f3e77]: Fast, responsive interfaces
+            - list [ref=f3e78]:
+              - listitem [ref=f3e79]:
+                - generic [ref=f3e80]:
+                  - img "React" [ref=f3e83]
+                  - tooltip "React"
+              - listitem [ref=f3e84]:
+                - generic [ref=f3e85]:
+                  - img "Next.js" [ref=f3e88]
+                  - tooltip "Next.js"
+              - listitem [ref=f3e89]:
+                - generic [ref=f3e90]:
+                  - img "TypeScript" [ref=f3e93]
+                  - tooltip "TypeScript"
+              - listitem [ref=f3e94]:
+                - generic [ref=f3e95]:
+                  - img "Tailwind CSS" [ref=f3e98]
+                  - tooltip "Tailwind CSS"
+          - listitem [ref=f3e99]:
+            - generic [ref=f3e101]:
+              - paragraph [ref=f3e102]: CMS and commerce
+              - paragraph [ref=f3e103]: Sites teams can edit
+            - list [ref=f3e104]:
+              - listitem [ref=f3e105]:
+                - generic [ref=f3e106]:
+                  - img "WordPress" [ref=f3e109]
+                  - tooltip "WordPress"
+              - listitem [ref=f3e110]:
+                - generic [ref=f3e111]:
+                  - img "Shopware" [ref=f3e114]
+                  - tooltip "Shopware"
+              - listitem [ref=f3e115]:
+                - generic [ref=f3e116]:
+                  - img "AEM" [ref=f3e119]
+                  - tooltip "AEM"
+              - listitem [ref=f3e120]:
+                - generic [ref=f3e121]:
+                  - img "Shopify" [ref=f3e124]
+                  - tooltip "Shopify"
+          - listitem [ref=f3e125]:
+            - generic [ref=f3e127]:
+              - paragraph [ref=f3e128]: Backend and data
+              - paragraph [ref=f3e129]: APIs, plugins, databases
+            - list [ref=f3e130]:
+              - listitem [ref=f3e131]:
+                - generic [ref=f3e132]:
+                  - img "PHP" [ref=f3e135]
+                  - tooltip "PHP"
+              - listitem [ref=f3e136]:
+                - generic [ref=f3e137]:
+                  - img "Node.js" [ref=f3e140]
+                  - tooltip "Node.js"
+              - listitem [ref=f3e141]:
+                - generic [ref=f3e142]:
+                  - img "MySQL" [ref=f3e145]
+                  - tooltip "MySQL"
+              - listitem [ref=f3e146]:
+                - generic [ref=f3e147]:
+                  - img "Docker" [ref=f3e150]
+                  - tooltip "Docker"
+          - listitem [ref=f3e151]:
+            - generic [ref=f3e153]:
+              - paragraph [ref=f3e154]: Automation and AI
+              - paragraph [ref=f3e155]: Monitoring, reports, AI summaries
+            - list [ref=f3e156]:
+              - listitem [ref=f3e157]:
+                - generic [ref=f3e158]:
+                  - img "n8n" [ref=f3e161]
+                  - tooltip "n8n"
+              - listitem [ref=f3e162]:
+                - generic [ref=f3e163]:
+                  - img "Claude" [ref=f3e166]
+                  - tooltip "Claude"
+              - listitem [ref=f3e167]:
+                - generic [ref=f3e168]:
+                  - img "GPT" [ref=f3e171]
+                  - tooltip "GPT"
+              - listitem [ref=f3e172]:
+                - generic [ref=f3e173]:
+                  - img "Gemini" [ref=f3e176]
+                  - tooltip "Gemini"
+      - generic [ref=f3e177]:
+        - paragraph [ref=f3e178]: Companies and clients I have built for
+        - list [ref=f3e179]:
+          - listitem [ref=f3e180]: rapiddweller
+          - listitem [ref=f3e182]: Techcombank
+          - listitem [ref=f3e184]: namperfume
+          - listitem [ref=f3e186]: TechVSI
+          - listitem [ref=f3e188]: FPT Software
+    - generic [ref=f3e191]:
+      - heading "What I do" [level=2] [ref=f3e192]
+      - generic [ref=f3e193]:
+        - article [ref=f3e194]:
+          - heading "Frontend" [level=3] [ref=f3e197]
+          - paragraph [ref=f3e198]: Fast, responsive UI from Figma.
+          - list [ref=f3e199]:
+            - listitem [ref=f3e200]:
+              - generic [ref=f3e201]: React
+            - listitem [ref=f3e205]:
+              - generic [ref=f3e206]: Next.js
+            - listitem [ref=f3e210]:
+              - generic [ref=f3e211]: TypeScript
+            - listitem [ref=f3e215]:
+              - generic [ref=f3e216]: JavaScript
+            - listitem [ref=f3e220]:
+              - generic [ref=f3e221]: Tailwind CSS
+            - listitem [ref=f3e225]:
+              - generic [ref=f3e226]: Sass
+            - listitem [ref=f3e230]:
+              - generic [ref=f3e231]: Redux
+            - listitem [ref=f3e235]:
+              - generic [ref=f3e236]: jQuery
+        - article [ref=f3e240]:
+          - heading "Backend and APIs" [level=3] [ref=f3e243]
+          - paragraph [ref=f3e244]: APIs, plugins and databases.
+          - list [ref=f3e245]:
+            - listitem [ref=f3e246]:
+              - generic [ref=f3e247]: PHP
+            - listitem [ref=f3e251]:
+              - generic [ref=f3e252]: Node.js
+            - listitem [ref=f3e256]:
+              - generic [ref=f3e257]: NestJS
+            - listitem [ref=f3e261]:
+              - generic [ref=f3e262]: Express
+            - listitem [ref=f3e266]:
+              - generic [ref=f3e267]: MySQL
+            - listitem [ref=f3e271]:
+              - generic [ref=f3e272]: PostgreSQL
+            - listitem [ref=f3e276]:
+              - generic [ref=f3e277]: MongoDB
+            - listitem [ref=f3e281]:
+              - generic [ref=f3e282]: Redis
+        - article [ref=f3e286]:
+          - heading "CMS and e-commerce" [level=3] [ref=f3e289]
+          - paragraph [ref=f3e290]: Sites, themes and plugins teams can edit.
+          - list [ref=f3e291]:
+            - listitem [ref=f3e292]:
+              - generic [ref=f3e293]: WordPress
+            - listitem [ref=f3e297]:
+              - generic [ref=f3e298]: Shopware
+            - listitem [ref=f3e302]:
+              - generic [ref=f3e303]: AEM
+            - listitem [ref=f3e307]:
+              - generic [ref=f3e308]: Shopify
+            - listitem [ref=f3e312]:
+              - generic [ref=f3e313]: TYPO3
+        - article [ref=f3e317]:
+          - heading "Technical SEO and tracking" [level=3] [ref=f3e320]
+          - paragraph [ref=f3e321]: Core Web Vitals, indexing and GDPR-safe tracking.
+          - list [ref=f3e322]:
+            - listitem [ref=f3e323]:
+              - generic [ref=f3e324]: Search Console
+            - listitem [ref=f3e328]:
+              - generic [ref=f3e329]: GA4
+            - listitem [ref=f3e333]:
+              - generic [ref=f3e334]: Google Ads
+            - listitem [ref=f3e338]:
+              - generic [ref=f3e339]: Merchant Center
+            - listitem [ref=f3e343]:
+              - generic [ref=f3e344]: Matomo
+        - article [ref=f3e348]:
+          - heading "Automation and AI" [level=3] [ref=f3e351]
+          - paragraph [ref=f3e352]: Monitoring workflows with AI summaries.
+          - list [ref=f3e353]:
+            - listitem [ref=f3e354]:
+              - generic [ref=f3e355]: n8n
+            - listitem [ref=f3e359]:
+              - generic [ref=f3e360]: Claude
+            - listitem [ref=f3e364]:
+              - generic [ref=f3e365]: GPT
+            - listitem [ref=f3e369]:
+              - generic [ref=f3e370]: Gemini
+        - article [ref=f3e374]:
+          - heading "Workflow" [level=3] [ref=f3e377]
+          - paragraph [ref=f3e378]: Git, CI/CD, containers, testing and handoff.
+          - list [ref=f3e379]:
+            - listitem [ref=f3e380]:
+              - generic [ref=f3e381]: Git
+            - listitem [ref=f3e385]:
+              - generic [ref=f3e386]: GitHub
+            - listitem [ref=f3e390]:
+              - generic [ref=f3e391]: GitLab
+            - listitem [ref=f3e395]:
+              - generic [ref=f3e396]: Docker
+            - listitem [ref=f3e400]:
+              - generic [ref=f3e401]: Jest
+            - listitem [ref=f3e405]:
+              - generic [ref=f3e406]: Postman
+            - listitem [ref=f3e410]:
+              - generic [ref=f3e411]: Figma
+    - generic [ref=f3e416]:
+      - heading "Selected projects" [level=2] [ref=f3e417]
+      - button "Techcombank Promotion Hub Featured Techcombank, 2024 Promotion Hub A new offers section on techcombank.com where customers browse promotions and read each offer in full. AEM Java SCSS JavaScript View project" [ref=f3e418] [cursor=pointer]:
+        - img "Techcombank Promotion Hub" [ref=f3e420]
+        - generic [ref=f3e421]:
+          - generic [ref=f3e422]: Featured
+          - paragraph [ref=f3e423]: Techcombank, 2024
+          - heading "Promotion Hub" [level=3] [ref=f3e424]
+          - paragraph [ref=f3e425]: A new offers section on techcombank.com where customers browse promotions and read each offer in full.
+          - list [ref=f3e426]:
+            - listitem [ref=f3e427]: AEM
+            - listitem [ref=f3e428]: Java
+            - listitem [ref=f3e429]: SCSS
+            - listitem [ref=f3e430]: JavaScript
+          - generic [ref=f3e431]: View project
+      - list [ref=f3e435]:
+        - listitem [ref=f3e436]:
+          - 'button "Schedule Run checks AI summary Report n8n and AI Website monitoring automations Four n8n workflows that watch websites around the clock: uptime, visual changes, cookie consent and WordPress security, with AI summaries and automatic reports. n8n Gemini API Javascript" [ref=f3e437] [cursor=pointer]':
+            - list [ref=f3e440]:
+              - listitem [ref=f3e441]:
+                - generic [ref=f3e442]: Schedule
+              - listitem [ref=f3e445]:
+                - generic [ref=f3e446]: Run checks
+              - listitem [ref=f3e449]:
+                - generic [ref=f3e450]: AI summary
+              - listitem [ref=f3e453]:
+                - generic [ref=f3e454]: Report
+            - generic [ref=f3e455]:
+              - paragraph [ref=f3e456]: n8n and AI
+              - heading "Website monitoring automations" [level=3] [ref=f3e457]
+              - paragraph [ref=f3e458]: "Four n8n workflows that watch websites around the clock: uptime, visual changes, cookie consent and WordPress security, with AI summaries and automatic reports."
+              - list [ref=f3e460]:
+                - listitem [ref=f3e461]: n8n
+                - listitem [ref=f3e462]: Gemini API
+                - listitem [ref=f3e463]: Javascript
+        - listitem [ref=f3e464]:
+          - button [ref=f3e465] [cursor=pointer]:
+            - img "namperfume E-commerce website" [ref=f3e467]
+            - generic [ref=f3e468]:
+              - paragraph [ref=f3e469]: namperfume, 2024
+              - heading "E-commerce website" [level=3] [ref=f3e470]
+              - paragraph [ref=f3e471]: "The retailer’s online store: search, filters, ordering, online payment and product reviews."
+              - list [ref=f3e473]:
+                - listitem [ref=f3e474]: Next.js
+                - listitem [ref=f3e475]: TypeScript
+                - listitem [ref=f3e476]: Tailwind CSS
+        - listitem [ref=f3e477]:
+          - button [ref=f3e478] [cursor=pointer]:
+            - img "namperfume BEME ERP" [ref=f3e480]
+            - generic [ref=f3e481]:
+              - paragraph [ref=f3e482]: namperfume, 2023
+              - heading "BEME ERP" [level=3] [ref=f3e483]
+              - paragraph [ref=f3e484]: An internal ERP for finance, HR, delivery and customer care, with check-in by camera, location and QR code.
+              - list [ref=f3e486]:
+                - listitem [ref=f3e487]: React
+                - listitem [ref=f3e488]: TypeScript
+                - listitem [ref=f3e489]: Ant Design
+        - listitem [ref=f3e490]:
+          - button [ref=f3e491] [cursor=pointer]:
+            - img "Personal project Grilli" [ref=f3e493]
+            - generic [ref=f3e494]:
+              - paragraph [ref=f3e495]: Personal project
+              - heading "Grilli" [level=3] [ref=f3e496]
+              - paragraph [ref=f3e497]: A responsive restaurant landing page in plain HTML, CSS and JavaScript.
+              - list [ref=f3e499]:
+                - listitem [ref=f3e500]: HTML
+                - listitem [ref=f3e501]: CSS
+                - listitem [ref=f3e502]: JavaScript
+    - generic [ref=f3e504]:
+      - heading "Experience" [level=2] [ref=f3e505]
+      - list [ref=f3e506]:
+        - listitem [ref=f3e507]:
+          - img "rapiddweller logo" [ref=f3e509]
+          - generic [ref=f3e510]:
+            - generic [ref=f3e511]:
+              - heading "Web developer at rapiddweller" [level=3] [ref=f3e512]:
+                - text: Web developer
+                - generic [ref=f3e513]: at rapiddweller
+              - paragraph [ref=f3e514]:
+                - generic "Current role" [ref=f3e515]
+                - text: 2025 – now
+                - generic [ref=f3e516]: Hybrid
+            - list [ref=f3e517]:
+              - listitem [ref=f3e518]: WordPress and Shopware plugins, technical SEO, and GDPR-compliant GA4 and Google Ads tracking.
+              - listitem [ref=f3e520]: Core Web Vitals work and full deployments, from staging to go-live.
+        - listitem [ref=f3e522]:
+          - img "TechVSI logo" [ref=f3e524]
+          - generic [ref=f3e525]:
+            - generic [ref=f3e526]:
+              - heading "Web developer at TechVSI" [level=3] [ref=f3e527]:
+                - text: Web developer
+                - generic [ref=f3e528]: at TechVSI
+              - paragraph [ref=f3e529]:
+                - text: Jun – Oct 2024
+                - generic [ref=f3e530]: Contract
+            - list [ref=f3e531]:
+              - listitem [ref=f3e532]: Maintained and refactored a large enterprise web system, with responsive UI built from Figma.
+        - listitem [ref=f3e534]:
+          - img "namperfume logo" [ref=f3e536]
+          - generic [ref=f3e537]:
+            - generic [ref=f3e538]:
+              - heading "Frontend developer and project lead at namperfume" [level=3] [ref=f3e539]:
+                - text: Frontend developer and project lead
+                - generic [ref=f3e540]: at namperfume
+              - paragraph [ref=f3e541]:
+                - text: 2022 – 2024
+                - generic [ref=f3e542]: Full-time
+            - list [ref=f3e543]:
+              - listitem [ref=f3e544]: Led frontend for the company’s ERP and e-commerce website.
+              - listitem [ref=f3e546]: Cut page load times by about 30% and built reusable components for later features.
+        - listitem [ref=f3e548]:
+          - img "FPT Software logo" [ref=f3e550]
+          - generic [ref=f3e551]:
+            - generic [ref=f3e552]:
+              - heading "Java developer intern at FPT Software" [level=3] [ref=f3e553]:
+                - text: Java developer intern
+                - generic [ref=f3e554]: at FPT Software
+              - paragraph [ref=f3e555]:
+                - text: Jun – Aug 2021
+                - generic [ref=f3e556]: Internship
+            - list [ref=f3e557]:
+              - listitem [ref=f3e558]: "Java web training: MVC and RESTful APIs."
+    - generic [ref=f3e561]:
+      - heading "Education and certificates" [level=2] [ref=f3e562]
+      - generic [ref=f3e563]:
+        - generic [ref=f3e564]:
+          - img "HCMUT logo" [ref=f3e566]
+          - generic [ref=f3e567]:
+            - heading "Bachelor of Engineering in Computer Science" [level=3] [ref=f3e568]
+            - paragraph [ref=f3e569]: Ho Chi Minh City University of Technology
+            - paragraph [ref=f3e570]: 2018 – 2022
+        - list [ref=f3e571]:
+          - listitem [ref=f3e572]:
+            - link "DevOps Automation with CI/CD Informatics Center, VNU-HCM University of Science, May 2026 Opens certificate" [ref=f3e573] [cursor=pointer]:
+              - /url: https://media.licdn.com/dms/image/v2/D562DAQGKF9JubgQc8g/profile-treasury-document-cover-images_800/B56Z63hB8XHUBA-/0/1781195351293?e=1794571200&v=beta&t=Am_SeabQe2Qqz7VMTScddGT326M9wTR_pOJETgTq7YA
+              - generic [ref=f3e575]:
+                - generic [ref=f3e576]: DevOps Automation with CI/CD
+                - generic [ref=f3e577]: Informatics Center, VNU-HCM University of Science, May 2026
+              - img "Opens certificate" [ref=f3e578]
+          - listitem [ref=f3e581]:
+            - link "Claude Code in Action Anthropic, Feb 2026 Opens certificate" [ref=f3e582] [cursor=pointer]:
+              - /url: https://verify.skilljar.com/c/8i9gr7kqxxw5
+              - generic [ref=f3e584]:
+                - generic [ref=f3e585]: Claude Code in Action
+                - generic [ref=f3e586]: Anthropic, Feb 2026
+              - img "Opens certificate" [ref=f3e587]
+          - listitem [ref=f3e590]:
+            - link "WordPress Theme Development Udemy, Jan 2025 Opens certificate" [ref=f3e591] [cursor=pointer]:
+              - /url: https://www.udemy.com/certificate/UC-04f02c0b-eef3-4e01-b8d1-ce153f52c43d/
+              - generic [ref=f3e593]:
+                - generic [ref=f3e594]: WordPress Theme Development
+                - generic [ref=f3e595]: Udemy, Jan 2025
+              - img "Opens certificate" [ref=f3e596]
+          - listitem [ref=f3e599]:
+            - link "Back End Development and APIs freeCodeCamp, Apr 2024 Opens certificate" [ref=f3e600] [cursor=pointer]:
+              - /url: https://www.freecodecamp.org/certification/fcc8cbadbff-75a0-4e5b-b58d-69d5e26ca552/back-end-development-and-apis
+              - generic [ref=f3e602]:
+                - generic [ref=f3e603]: Back End Development and APIs
+                - generic [ref=f3e604]: freeCodeCamp, Apr 2024
+              - img "Opens certificate" [ref=f3e605]
+          - listitem [ref=f3e608]:
+            - link "JavaScript Algorithms and Data Structures freeCodeCamp, Aug 2020 Opens certificate" [ref=f3e609] [cursor=pointer]:
+              - /url: https://www.freecodecamp.org/certification/fcc8cbadbff-75a0-4e5b-b58d-69d5e26ca552/javascript-algorithms-and-data-structures
+              - generic [ref=f3e611]:
+                - generic [ref=f3e612]: JavaScript Algorithms and Data Structures
+                - generic [ref=f3e613]: freeCodeCamp, Aug 2020
+              - img "Opens certificate" [ref=f3e614]
+    - generic [ref=f3e619]:
+      - generic [ref=f3e620]:
+        - generic [ref=f3e621]: Open to new roles
+        - heading "Need a website built, fixed or found on Google?" [level=2] [ref=f3e623]
+        - paragraph [ref=f3e624]: Tell me about the role or the project. I'll reply by email.
+        - list [ref=f3e625]:
+          - listitem [ref=f3e626]:
+            - link "nguyenhophuocloc.cb@gmail.com" [ref=f3e627] [cursor=pointer]:
+              - /url: mailto:nguyenhophuocloc.cb@gmail.com
+          - listitem [ref=f3e633]:
+            - link "LinkedIn" [ref=f3e634] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/nguyen-ho-phuoc-loc/
+          - listitem [ref=f3e641]:
+            - link "GitHub" [ref=f3e642] [cursor=pointer]:
+              - /url: https://www.github.com/nguyenhophuocloc/
+      - generic [ref=f3e648]:
+        - generic [ref=f3e649]:
+          - generic [ref=f3e650]:
+            - generic [ref=f3e651]: Name
+            - textbox "Name" [ref=f3e652]
+          - generic [ref=f3e653]:
+            - generic [ref=f3e654]: Email
+            - textbox "Email" [ref=f3e655]
+        - generic [ref=f3e656]:
+          - generic [ref=f3e657]: Message
+          - textbox "Message" [ref=f3e658]
+        - generic [ref=f3e659]:
+          - button "Send message" [ref=f3e660] [cursor=pointer]
+          - status
+  - contentinfo [ref=f3e661]:
+    - generic [ref=f3e662]:
+      - paragraph [ref=f3e663]: © 2026 Nguyen Ho Phuoc Loc
+      - list [ref=f3e664]:
+        - listitem [ref=f3e665]:
+          - link "Email" [ref=f3e666] [cursor=pointer]:
+            - /url: mailto:nguyenhophuocloc.cb@gmail.com
+        - listitem [ref=f3e667]:
+          - link "LinkedIn" [ref=f3e668] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/nguyen-ho-phuoc-loc/
+        - listitem [ref=f3e669]:
+          - link "GitHub" [ref=f3e670] [cursor=pointer]:
+            - /url: https://www.github.com/nguyenhophuocloc/
+        - listitem [ref=f3e671]:
+          - button "Cookie settings" [ref=f3e672] [cursor=pointer]
+        - listitem [ref=f3e673]:
+          - link "Back to top" [ref=f3e674] [cursor=pointer]:
+            - /url: "#home"
+  - button "Open Next.js Dev Tools" [ref=f3e680] [cursor=pointer]

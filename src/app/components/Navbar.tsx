@@ -30,7 +30,7 @@ export default function Navbar({ open, onNavigate }: Props) {
           return (
             <li key={link}>
               <Link
-                href={link}
+                href={`/${link}`}
                 onClick={onNavigate}
                 aria-current={isActive ? 'location' : undefined}
                 className={`relative block py-3 text-[15px] transition-colors md:py-1 ${
