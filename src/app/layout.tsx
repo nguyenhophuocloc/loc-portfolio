@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import CanonicalTag from './components/CanonicalTag';
+import CookieBanner, { consentDefaultScript } from './components/CookieBanner';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import './globals.css';
@@ -80,12 +81,17 @@ export default function RootLayout({
       lang="en"
       className={`${sans.variable} font-sans`}
     >
+      <head>
+        {/* Consent Mode v2 defaults must be set before GTM loads */}
+        <script dangerouslySetInnerHTML={{ __html: consentDefaultScript }} />
+      </head>
       <GoogleTagManager gtmId="GTM-WLJDNW5B" />
       <body suppressHydrationWarning>
         <Header />
         <CanonicalTag />
         {children}
         <Footer />
+        <CookieBanner />
         <Script
           id="json-ld-script"
           type="application/ld+json"

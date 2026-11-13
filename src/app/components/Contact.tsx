@@ -14,6 +14,12 @@ const Contact = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!form.current) return;
+    // Honeypot: humans never see this field, bots fill it. Fake success so they don't retry.
+    if ((form.current.elements.namedItem('website') as HTMLInputElement).value) {
+      setStatus('sent');
+      form.current.reset();
+      return;
+    }
     setStatus('sending');
 
     emailjs
@@ -76,6 +82,10 @@ const Contact = () => {
           </div>
 
           <form ref={form} onSubmit={sendEmail} className="relative space-y-5">
+            <div aria-hidden className="absolute -left-[9999px] h-px w-px overflow-hidden">
+              <label htmlFor="website">Website</label>
+              <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+            </div>
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor="from_name" className="mb-2 block text-sm font-medium">

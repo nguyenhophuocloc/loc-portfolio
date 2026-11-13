@@ -1,5 +1,6 @@
 import { profile } from '@/content/site';
 import Link from 'next/link';
+import { CookieSettingsButton } from './CookieBanner';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -26,7 +27,15 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="#home" className="hover:text-ink">
+            <Link href="/privacy" className="hover:text-ink">
+              Privacy
+            </Link>
+          </li>
+          <li>
+            <CookieSettingsButton className="hover:text-ink" />
+          </li>
+          <li>
+            <Link href="/#home" className="hover:text-ink">
               Back to top
             </Link>
           </li>

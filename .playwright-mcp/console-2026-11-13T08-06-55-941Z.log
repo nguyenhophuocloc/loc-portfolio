@@ -1,0 +1,87 @@
+[      89ms] [LOG] [Fast Refresh] done in 96ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[     316ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[     339ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  369156ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  369162ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  369232ms] [LOG] [Fast Refresh] done in 8ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  369335ms] [LOG] [Fast Refresh] done in 8ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  369452ms] [LOG] [Fast Refresh] done in 8ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  369970ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:1
+[  370103ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  370122ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[  370162ms] ReferenceError: GDPR_REGIONS is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_1j751uda0op2q._.js:61:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.commonJsRequire [as r] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:495:12)
+    at requireModule (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:100:84)
+    at initializeModuleChunk (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:1176:25)
+    at resolveModuleChunk (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:1085:43)
+    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:1868:24
+[ 1398391ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1398739ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1398775ms] [LOG] [Fast Refresh] done in 453ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1398907ms] [LOG] [Fast Refresh] done in 453ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1399099ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1399130ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1452691ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1452694ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1452795ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1452941ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1453049ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1453180ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1453377ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1453438ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1466974ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1467035ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1474789ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1475047ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1475091ms] [LOG] [Fast Refresh] done in 145ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1481274ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1481295ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1483965ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1483973ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1484209ms] [WARNING] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1704899ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1704916ms] [LOG] [Fast Refresh] done in 14ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1705048ms] [LOG] [Fast Refresh] done in 14ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1705655ms] [LOG] [Fast Refresh] done in 757ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1705722ms] [LOG] [Fast Refresh] done in 757ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1706422ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1706622ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1710663ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1722758ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1785092ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1817421ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1817723ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1936591ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1939170ms] [LOG] [Fast Refresh] done in 1532ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:720
+[ 1972409ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1973414ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1974420ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1975429ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1976438ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1981447ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1986466ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1991493ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 1996533ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 2001591ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 2006688ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
+[ 2011872ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=Kmt4M17FeJ_6VEE2nOfyN' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:16226
